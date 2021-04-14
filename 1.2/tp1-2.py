@@ -20,6 +20,7 @@ def ruleta(billetera):
         global indice
         indice = 0
     for i in range(1, tiradas):
+        max_ = i
         if op == 1:
             fichas = martingala(perdida, fichas)
         elif op == 2:
@@ -27,7 +28,6 @@ def ruleta(billetera):
         else:
             fichas = fibonacci(perdida, suc)
         if (fichas > max_apuesta) and inf == 'N' and fichas > billetera:
-            max_ = i
             break
         billetera -= fichas
         nro = random.randint(0, cant_nro)
@@ -43,7 +43,6 @@ def ruleta(billetera):
             billetera += gan
         total_apuestas.append(billetera)
         if billetera <= fichas and inf == 'N':
-            max_ = i
             break
     if max_>max:
         max = max_
