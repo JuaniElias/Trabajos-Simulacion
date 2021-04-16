@@ -52,7 +52,7 @@ def martingala(flag, fichas):
     if flag:
         return fichas * 2
     else:
-        return fichas
+        return min_apuesta
 
 
 def D_ALEMBERT(flag, fichas):
