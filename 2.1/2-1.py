@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import seaborn as sns
 
 a = 25214903917
 c = 11
@@ -34,7 +34,7 @@ def plot_pmc():
     x = generador_pmc(1234, 50)
     y = generador_pmc(5678, 50)
 
-    plt.scatter(x, y, s=75, c='black', alpha=.25)
+    sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
     plt.xticks(())
     plt.yticks(())
     plt.show()
@@ -44,7 +44,7 @@ def plot_gcl():
     x = generador_gcl(9999, 1000)
     y = generador_gcl(8888, 1000)
 
-    plt.scatter(x, y, s=75, c='black', alpha=.25)
+    sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
     plt.xticks(())
     plt.yticks(())
     plt.show()
