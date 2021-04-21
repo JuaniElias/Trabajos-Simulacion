@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 from decimal import Decimal
+import numpy as np
+
 
 a = 25214903917
 c = 11
@@ -73,6 +75,10 @@ def chi_cuadrado(muestra):
     print("grado de libertad: " + str(cant_celdas - 1))
     print("con un alfa de valor: 0.05")
     print("el valor obtenido es: " + str(chi))
+    x = ['Clase 1','Clase 2','Clase 3','Clase 4','Clase 5','Clase 6','Clase 7', 'Clase 8','Clase 9','Clase 10']
+    # arregalr que no sea hardcodeado
+    plt.bar(x,celdas)
+    plt.show()
 
 
 def contar_observ(muestra, cant_celdas):
@@ -89,9 +95,39 @@ def contar_observ(muestra, cant_celdas):
         celdas.append(ocurrencias)
     return celdas
 
+def runs_above_below(muestra):
+    mean = np.mean(muestra)
+    #a = sum(map(lambda x: x > mean, muestra))
+    #b = sum(map(lambda x: x < mean, muestra))
+    run = []
+    a = 0
+    b = 0
+    for i in muestra:
+        if i > mean:
+            run.append(1)
+            a += 1
+        else:
+            run.append(0)
+            b += 1
+    print("La media de la muestra es: " + str(mean))
+    print("la cantidad total de números en la muestra es: "+ str(len(muestra)))
+    print("La cantidad de números por debajo de la media es: "+ str(b))
+    print("La cantidad de números por encima de la media es: " + str(a))
+    var = range(len(run))
+    plt.scatter(var, run, alpha=.25)
+    plt.title("Test runs Above and Below")
+    plt.xlim(0, len(run))
+    plt.axhline(mean, color='red', label="media de la muestra")
+    plt.xlabel("muestra n")
+    plt.ylabel("valor de muestra")
+    plt.legend()
+    plt.show()
+
+
 
 x = generador_gcl(9999, 1000)
 chi_cuadrado(x)
+runs_above_below(x)
 
 
 """
