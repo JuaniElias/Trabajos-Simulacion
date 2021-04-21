@@ -123,11 +123,18 @@ def runs_above_below(muestra):
     plt.legend()
     plt.show()
 
-
+def reverse_arrangements(muestra):
+    cont = 0
+    for i in range(0,99):
+        for j in range(i+1, 100):
+            if muestra[i] > muestra[j]:
+                cont += 1
+    print(cont)
 
 x = generador_gcl(9999, 1000)
-chi_cuadrado(x)
-runs_above_below(x)
+#chi_cuadrado(x)
+#runs_above_below(x)
+reverse_arrangements(x)
 
 
 """
