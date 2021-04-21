@@ -3,10 +3,9 @@ import seaborn as sns
 from decimal import Decimal
 import numpy as np
 import pandas as pd
+from termcolor import colored
 
-a = 25214903917
-c = 11
-m = 2 ** 48
+
 
 
 
@@ -28,9 +27,28 @@ def generador_pmc(seed, n):
     return poblacion
 
 def generador_gcl(seed, n):
+    a = 25214903917
+    c = 11
+    m = 2 ** 48
     poblacion = [(a * seed + c) % m]
     for i in range(1, n):
         poblacion.append((a * poblacion[i-1] + c) % m)
+    poblacion = normalizar(poblacion)
+    return poblacion
+
+def generador_cc(seed, z, n):
+    a = 2 * z
+    c = (2 * z) + 1
+    m = 2 ** z
+    for i in range(1,100):
+        if (i-a)%4 == 1:
+            b = i
+            break
+    poblacion = [(a * (seed ** 2) + b * seed + c) % m]
+    for i in range(1, n):
+        x = poblacion[i-1]
+        valor = (a * (x ** 2) + b * x + c) % m
+        poblacion.append(valor)
     poblacion = normalizar(poblacion)
     return poblacion
 
@@ -73,14 +91,16 @@ def chi_cuadrado(muestra):
     chi = 0
     for o in celdas:
         chi += ((o - e) ** 2)/e
+    print(colored("PRUEBA DE BONDAD DE AJUSTE", "magenta"))
     if chi < valor:
-        print("La hipotesis nula es aceptada porque la prueba es menor que el valor crítico")
+        print(colored("La hipotesis nula es aceptada porque la prueba es menor que el valor crítico", "green"))
     else:
-        print("la hipotesis nula no es aceptada porque la prueba dio mayor al valor crítico")
-    print("el valor obtenido es: " + str(chi))
-    print("el valor critico con alpha= " + str(alpha) + " y grado de libertad= " + str(
-        cant_celdas - 1) + " es el siguiente --> " + str(valor))
-    print(str(chi) + '<' + str(valor))
+        print(colored("la hipotesis nula no es aceptada porque la prueba dio mayor al valor crítico", "red"))
+    print(colored(str(chi), "blue") + ' < ' + str(valor))
+    print("el valor obtenido es: " + colored(str(chi), "blue"))
+    print("el valor critico con alpha= " +colored(str(alpha), "blue") + " y grado de libertad= " +
+          colored(str(cant_celdas - 1), "blue") + " es el siguiente --> " + colored(str(valor), "blue"))
+
 
     x = ['Clase 1','Clase 2','Clase 3','Clase 4','Clase 5','Clase 6','Clase 7', 'Clase 8','Clase 9','Clase 10']
     # arregalr que no sea hardcodeado
@@ -115,10 +135,11 @@ def runs_above_below(muestra):
         else:
             run.append(0)
             b += 1
-    print("La media de la muestra es: " + str(mean))
-    print("la cantidad total de números en la muestra es: "+ str(len(muestra)))
-    print("La cantidad de números por debajo de la media es: "+ str(b))
-    print("La cantidad de números por encima de la media es: " + str(a))
+    print(colored("PRUEBA DE NÚMEROS POR ENCIMA Y DEBAJO DE LA MEDIA", "magenta"))
+    print("La media de la muestra es: " + colored(str(mean), "blue"))
+    print("la cantidad total de números en la muestra es: "+ colored(str(len(muestra)), "blue"))
+    print("La cantidad de números por debajo de la media es: "+ colored(str(b), "blue"))
+    print("La cantidad de números por encima de la media es: " + colored(str(a), "blue"))
     var = range(len(run))
     plt.scatter(var, run, alpha=.25)
     plt.title("Test runs Above and Below")
@@ -142,18 +163,21 @@ def reverse_arrangements(muestra):
         for j in range(i+1, n):
             if muestra[i] > muestra[j]:
                 cont += 1
-
+    print(colored("PRUEBA DE ARREGLOS INVERSOS ", "magenta"))
     if (min < cont) and (cont <= max):
-        print("La hipótesis nula es aceptada porque nuestro valor está dentro de los parámetros")
+        print(colored("La hipótesis nula es aceptada porque nuestro valor está dentro de los parámetros", "green"))
     else:
-        print("la hipótesis no es aceptada porque no cumple con los parámetros")
-    print(str(min) + '<' + str(cont) + '<=' + str(max))
+        print(colored("la hipótesis no es aceptada porque no cumple con los parámetros", "red"))
+    print(str(min) + ' < ' + colored(str(cont), "blue") + '<=' + str(max))
 
 
-x = generador_gcl(9999, 1000)
+x = generador_cc(9999, 5,1000)
 chi_cuadrado(x)
+print()
 runs_above_below(x)
+print()
 reverse_arrangements(x)
+print()
 
 
 
