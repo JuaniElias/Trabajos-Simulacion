@@ -52,19 +52,7 @@ def generador_cc(seed, z, n):
     poblacion = normalizar(poblacion)
     return poblacion
 
-def plot_pmc(seed1, seed2, n):
-    x = generador_pmc(seed1, n)
-    y = generador_pmc(seed2, n)
-
-    sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
-    plt.xticks(())
-    plt.yticks(())
-    plt.show()
-
-def plot_gcl(seed1, seed2, n):
-    x = generador_gcl(seed1, n)
-    y = generador_gcl(seed2, n)
-
+def plot_(x, y):
     sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
     plt.xticks(())
     plt.yticks(())
@@ -168,20 +156,18 @@ def reverse_arrangements(muestra):
         print(colored("La hipótesis nula es aceptada porque nuestro valor está dentro de los parámetros", "green"))
     else:
         print(colored("la hipótesis no es aceptada porque no cumple con los parámetros", "red"))
-    print(str(min) + ' < ' + colored(str(cont), "blue") + '<=' + str(max))
+    print(str(min) + ' < ' + colored(str(cont), "blue") + ' <= ' + str(max))
 
-
-x = generador_cc(9999, 5,1000)
+seed1 = 4567
+seed2 = 7891
+#x = generador_cc(9849, 5,1000)
+#x = generador_pmc(1234, 100)
+x = generador_gcl(seed1, 1000)
+y = generador_gcl(seed2, 1000)
 chi_cuadrado(x)
 print()
 runs_above_below(x)
 print()
 reverse_arrangements(x)
 print()
-
-
-
-
-"""
-plot_pmc()
-plot_gcl()"""
+plot_(x, y)
