@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
+from decimal import Decimal
 
 a = 25214903917
 c = 11
-m = 2**48
+m = 2 ** 48
 
 
 def completar_ceros(x):
@@ -45,10 +46,12 @@ def plot_pmc(seed1, seed2, n):
 def plot_gcl(seed1, seed2, n):
     x = generador_gcl(seed1, n)
     y = generador_gcl(seed2, n)
+
     sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
     plt.xticks(())
     plt.yticks(())
     plt.show()
+
 
 def normalizar(a):
     minimo = min(a)
@@ -59,36 +62,38 @@ def normalizar(a):
         arreglo.append(valor)
     return arreglo
 
+
 def chi_cuadrado(muestra):
-    cant_clases = 10
-    celdas = lambdas(muestra,cant_clases)
-    e = len(muestra)/cant_clases
+    cant_celdas = 10
+    celdas = contar_observ(muestra, cant_celdas)
+    e = len(muestra)/cant_celdas
     chi = 0
     for o in celdas:
-        chi += ((o-e)**2)/e
-    print("grado de libertad: " + str(cant_clases-1))
+        chi += ((o - e) ** 2)/e
+    print("grado de libertad: " + str(cant_celdas - 1))
     print("con un alfa de valor: 0.05")
-    print("el valor obtenido es: "+ str(chi))
+    print("el valor obtenido es: " + str(chi))
 
-def lambdas(muestra, c):
+
+def contar_observ(muestra, cant_celdas):
+    step = Decimal(str(1/cant_celdas))
     min = 0
-    max = 1 / c
+    max = step
     celdas = []
-    x = sum(map(lambda x: min <= x < max, muestra))
-    celdas.append(x)
-    for x in range(1, c):
-        min += 1/c
-        max += 1/c
-        x = sum(map(lambda x: min < x <= max, muestra))
-        celdas.append(x)
-    celdas[9] += 1
+    ocurrencias = sum(map(lambda x: x <= max, muestra))
+    celdas.append(ocurrencias)
+    for i in range(1, cant_celdas):
+        min += step
+        max += step
+        ocurrencias = sum(map(lambda x: min < x <= max, muestra))
+        celdas.append(ocurrencias)
     return celdas
 
-x = generador_gcl(9999, 10000)
+
+x = generador_gcl(9999, 1000)
 chi_cuadrado(x)
 
 
 """
 plot_pmc()
 plot_gcl()"""
-
