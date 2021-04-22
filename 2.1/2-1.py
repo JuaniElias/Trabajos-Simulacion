@@ -4,6 +4,7 @@ from decimal import Decimal
 import numpy as np
 import pandas as pd
 from termcolor import colored
+import scipy.stats as ss
 
 def completar_ceros(x):
     x = str(x)
@@ -125,9 +126,16 @@ def runs_above_below(muestra):
             c += 1
     mu = ((2*a*b)/a+b)+1
     va = 2*a*b*(2*a*b - (a+b))/(a+b-1)*(a+b)**2
-    z1 = (c - mu)/ sqrt(va)
+    x = ss.norm(0,1)
+    z1 = (b - mu)/np.sqrt(va)
+    z2 = 1 - (alpha/2)
 
     print(colored("PRUEBA DE NÚMEROS POR ENCIMA Y DEBAJO DE LA MEDIA", "magenta"))
+    if x.cdf(-1.23) >= x.cdf(1.96):
+        print(colored("Se rechaza la hipotésis de aleatoriedad puesto que no cumple con la restricción", "red"))
+    else:
+        print(colored("Se aprueba la hipotesis de aleatoriedad puesto que cumple con la restricción", "green"))
+    print(colored(str(x.cdf(z1)), "blue") + ' >= ' + str(x.cdf(z2)))
     print("La media de la muestra es: " + colored(str(mean), "blue"))
     print("la cantidad total de números en la muestra es: "+ colored(str(len(muestra)), "blue"))
     print("La cantidad de números por debajo de la media es: "+ colored(str(b), "blue"))
