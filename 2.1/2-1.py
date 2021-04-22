@@ -64,7 +64,7 @@ def normalizar(a):
     return arreglo
 
 def chi_cuadrado(muestra):
-    df_chi = pd.read_excel("D:\GitHub\Trabajos-Simulacion\chi-cuadrado.xlsx")
+    df_chi = pd.read_excel("chi-cuadrado.xlsx")
     df_chi = pd.DataFrame(df_chi)
     cant_celdas = 10
     alpha = 0.05
@@ -151,7 +151,7 @@ def runs_above_below(muestra):
     plt.show()
 
 def reverse_arrangements(muestra):
-    df_reverse = pd.read_excel("D:\GitHub\Trabajos-Simulacion\critical-arrangement.xlsx")
+    df_reverse = pd.read_excel("critical-arrangement.xlsx")
     df_reverse = pd.DataFrame(df_reverse)
     alpha = 0.025
     n = 100
