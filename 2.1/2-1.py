@@ -5,11 +5,6 @@ import numpy as np
 import pandas as pd
 from termcolor import colored
 
-
-
-
-
-
 def completar_ceros(x):
     x = str(x)
     for _ in range(0, (8-len(x))):
@@ -114,15 +109,24 @@ def runs_above_below(muestra):
     #a = sum(map(lambda x: x > mean, muestra))
     #b = sum(map(lambda x: x < mean, muestra))
     run = []
+    alpha = 0.05
     a = 0
     b = 0
-    for i in muestra:
-        if i > mean:
+    c = 1
+    for i in range(0, len(muestra)):
+        if muestra[i] > mean:
             run.append(1)
             a += 1
         else:
             run.append(0)
             b += 1
+    for i in range(1,len(run)):
+        if run[i-1] != run[i]:
+            c += 1
+    mu = ((2*a*b)/a+b)+1
+    va = 2*a*b*(2*a*b - (a+b))/(a+b-1)*(a+b)**2
+    z1 = (c - mu)/ sqrt(va)
+
     print(colored("PRUEBA DE NÚMEROS POR ENCIMA Y DEBAJO DE LA MEDIA", "magenta"))
     print("La media de la muestra es: " + colored(str(mean), "blue"))
     print("la cantidad total de números en la muestra es: "+ colored(str(len(muestra)), "blue"))
@@ -158,16 +162,16 @@ def reverse_arrangements(muestra):
         print(colored("la hipótesis no es aceptada porque no cumple con los parámetros", "red"))
     print(str(min) + ' < ' + colored(str(cont), "blue") + ' <= ' + str(max))
 
-seed1 = 4567
+seed1 = 1111
 seed2 = 7891
 #x = generador_cc(9849, 5,1000)
 #x = generador_pmc(1234, 100)
-x = generador_gcl(seed1, 1000)
-y = generador_gcl(seed2, 1000)
-chi_cuadrado(x)
+x = generador_pmc(seed1, 100)
+y = generador_pmc(seed2, 100)
+#chi_cuadrado(x)
 print()
 runs_above_below(x)
 print()
-reverse_arrangements(x)
+#reverse_arrangements(x)
 print()
-plot_(x, y)
+#plot_(x, y)
