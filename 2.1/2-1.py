@@ -6,11 +6,13 @@ import pandas as pd
 from termcolor import colored
 import scipy.stats as ss
 
+
 def completar_ceros(x):
     x = str(x)
     for _ in range(0, (8-len(x))):
         x = '0' + x
     return x
+
 
 def generador_pmc(seed, n):
     poblacion = [seed]
@@ -22,6 +24,7 @@ def generador_pmc(seed, n):
     poblacion = normalizar(poblacion)
     return poblacion
 
+
 def generador_gcl(seed, n):
     a = 25214903917
     c = 11
@@ -32,11 +35,12 @@ def generador_gcl(seed, n):
     poblacion = normalizar(poblacion)
     return poblacion
 
+
 def generador_cc(seed, z, n):
     a = 2 * z
     c = (2 * z) + 1
     m = 2 ** z
-    for i in range(1,100):
+    for i in range(1, 100):
         if (i-a)%4 == 1:
             b = i
             break
@@ -48,11 +52,13 @@ def generador_cc(seed, z, n):
     poblacion = normalizar(poblacion)
     return poblacion
 
+
 def plot_(x, y):
     sns.regplot(x=x, y=y, color='black', scatter_kws={'alpha': 0.4}, lowess=True)
     plt.xticks(())
     plt.yticks(())
     plt.show()
+
 
 def normalizar(a):
     minimo = min(a)
@@ -63,13 +69,13 @@ def normalizar(a):
         arreglo.append(valor)
     return arreglo
 
+
 def chi_cuadrado(muestra):
-    df_chi = pd.read_excel("chi-cuadrado.xlsx")
-    df_chi = pd.DataFrame(df_chi)
     cant_celdas = 10
     alpha = 0.05
-    row = df_chi[df_chi[0] == cant_celdas - 1]
-    valor = float(row[alpha])
+    # Uso scipy para calcular el chi cuadrado
+    valor = ss.chi2.ppf(1-alpha, cant_celdas-1)
+
     celdas = contar_observ(muestra, cant_celdas)
     e = len(muestra)/cant_celdas
     chi = 0
@@ -77,19 +83,23 @@ def chi_cuadrado(muestra):
         chi += ((o - e) ** 2)/e
     print(colored("PRUEBA DE BONDAD DE AJUSTE", "magenta"))
     if chi < valor:
-        print(colored("La hipotesis nula es aceptada porque la prueba es menor que el valor crítico", "green"))
+        print(colored("La hipótesis nula es aceptada porque la prueba es menor que el valor crítico", "green"))
     else:
-        print(colored("la hipotesis nula no es aceptada porque la prueba dio mayor al valor crítico", "red"))
+        print(colored("la hipótesis nula no es aceptada porque la prueba dio mayor al valor crítico", "red"))
     print(colored(str(chi), "blue") + ' < ' + str(valor))
     print("el valor obtenido es: " + colored(str(chi), "blue"))
-    print("el valor critico con alpha= " +colored(str(alpha), "blue") + " y grado de libertad= " +
+    print("el valor critico con alpha= " + colored(str(alpha), "blue") + " y grado de libertad= " +
           colored(str(cant_celdas - 1), "blue") + " es el siguiente --> " + colored(str(valor), "blue"))
 
+    # Se crea la lista con los intervalos de las clases
+    divisiones = (list(map(lambda x: x/cant_celdas, range(1, cant_celdas + 1, 1))))
+    divisiones = list(map(str, divisiones))
 
-    x = ['Clase 1','Clase 2','Clase 3','Clase 4','Clase 5','Clase 6','Clase 7', 'Clase 8','Clase 9','Clase 10']
-    # arregalr que no sea hardcodeado
-    plt.bar(x,celdas)
+    plt.bar(divisiones, celdas)
+    plt.xlabel("Clases")
+    plt.ylabel("Frecuencias")
     plt.show()
+
 
 def contar_observ(muestra, cant_celdas):
     step = Decimal(str(1/cant_celdas))
@@ -104,6 +114,7 @@ def contar_observ(muestra, cant_celdas):
         ocurrencias = sum(map(lambda x: min < x <= max, muestra))
         celdas.append(ocurrencias)
     return celdas
+
 
 def runs_above_below(muestra):
     mean = np.mean(muestra)
@@ -121,20 +132,20 @@ def runs_above_below(muestra):
         else:
             run.append(0)
             b += 1
-    for i in range(1,len(run)):
+    for i in range(1, len(run)):
         if run[i-1] != run[i]:
             c += 1
     mu = ((2*a*b)/a+b)+1
     va = 2*a*b*(2*a*b - (a+b))/(a+b-1)*(a+b)**2
-    x = ss.norm(0,1)
+    x = ss.norm(0, 1)
     z1 = (b - mu)/np.sqrt(va)
     z2 = 1 - (alpha/2)
 
     print(colored("PRUEBA DE NÚMEROS POR ENCIMA Y DEBAJO DE LA MEDIA", "magenta"))
     if x.cdf(-1.23) >= x.cdf(1.96):
-        print(colored("Se rechaza la hipotésis de aleatoriedad puesto que no cumple con la restricción", "red"))
+        print(colored("Se rechaza la hipótesis de aleatoriedad puesto que no cumple con la restricción", "red"))
     else:
-        print(colored("Se aprueba la hipotesis de aleatoriedad puesto que cumple con la restricción", "green"))
+        print(colored("Se aprueba la hipótesis de aleatoriedad puesto que cumple con la restricción", "green"))
     print(colored(str(x.cdf(z1)), "blue") + ' >= ' + str(x.cdf(z2)))
     print("La media de la muestra es: " + colored(str(mean), "blue"))
     print("la cantidad total de números en la muestra es: "+ colored(str(len(muestra)), "blue"))
@@ -150,6 +161,7 @@ def runs_above_below(muestra):
     plt.legend()
     plt.show()
 
+
 def reverse_arrangements(muestra):
     df_reverse = pd.read_excel("critical-arrangement.xlsx")
     df_reverse = pd.DataFrame(df_reverse)
@@ -159,7 +171,7 @@ def reverse_arrangements(muestra):
     row = df_reverse[df_reverse[0] == n]
     min = int(row[(1 - alpha)])
     max = int(row[alpha])
-    for i in range(0,n-1):
+    for i in range(0, n-1):
         for j in range(i+1, n):
             if muestra[i] > muestra[j]:
                 cont += 1
@@ -170,16 +182,19 @@ def reverse_arrangements(muestra):
         print(colored("la hipótesis no es aceptada porque no cumple con los parámetros", "red"))
     print(str(min) + ' < ' + colored(str(cont), "blue") + ' <= ' + str(max))
 
+
 seed1 = 1111
 seed2 = 7891
 #x = generador_cc(9849, 5,1000)
 #x = generador_pmc(1234, 100)
-x = generador_pmc(seed1, 100)
-y = generador_pmc(seed2, 100)
-#chi_cuadrado(x)
-print()
-runs_above_below(x)
-print()
-#reverse_arrangements(x)
-print()
+x = generador_pmc(seed1, 50)
+# y = generador_pmc(seed2, 100)
+chi_cuadrado(x)
+# print()
+# #runs_above_below(x)
+# print()
+# #reverse_arrangements(x)
+# print()
 #plot_(x, y)
+
+
