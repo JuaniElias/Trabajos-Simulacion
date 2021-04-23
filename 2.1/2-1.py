@@ -74,7 +74,7 @@ def chi_cuadrado(muestra):
     cant_celdas = 10
     alpha = 0.05
     # Uso scipy para calcular el chi cuadrado
-    valor = ss.chi2.ppf(1-alpha, cant_celdas-1)
+    valor = ss.chi2.ppf(1-alpha, cant_celdas - 1)
 
     celdas = contar_observ(muestra, cant_celdas)
     e = len(muestra)/cant_celdas
@@ -85,7 +85,7 @@ def chi_cuadrado(muestra):
     if chi < valor:
         print(colored("La hipótesis nula es aceptada porque la prueba es menor que el valor crítico", "green"))
     else:
-        print(colored("la hipótesis nula no es aceptada porque la prueba dio mayor al valor crítico", "red"))
+        print(colored("la hipótesis nula NO es aceptada pues no se cumple", "red"))
     print(colored(str(chi), "blue") + ' < ' + str(valor))
     print("el valor obtenido es: " + colored(str(chi), "blue"))
     print("el valor critico con alpha= " + colored(str(alpha), "blue") + " y grado de libertad= " +
@@ -142,24 +142,15 @@ def runs_above_below(muestra):
     z2 = 1 - (alpha/2)
 
     print(colored("PRUEBA DE NÚMEROS POR ENCIMA Y DEBAJO DE LA MEDIA", "magenta"))
-    if x.cdf(-1.23) >= x.cdf(1.96):
-        print(colored("Se rechaza la hipótesis de aleatoriedad puesto que no cumple con la restricción", "red"))
+    if (x.cdf(z1)) >= (x.cdf(z2)):
+        print(colored("Se rechaza la hipótesis de aleatoriedad puesto que se cumple", "red"))
     else:
-        print(colored("Se aprueba la hipótesis de aleatoriedad puesto que cumple con la restricción", "green"))
+        print(colored("Se aprueba la hipótesis de aleatoriedad puesto que NO se cumple", "green"))
     print(colored(str(x.cdf(z1)), "blue") + ' >= ' + str(x.cdf(z2)))
     print("La media de la muestra es: " + colored(str(mean), "blue"))
     print("la cantidad total de números en la muestra es: "+ colored(str(len(muestra)), "blue"))
     print("La cantidad de números por debajo de la media es: "+ colored(str(b), "blue"))
     print("La cantidad de números por encima de la media es: " + colored(str(a), "blue"))
-    var = range(len(run))
-    plt.scatter(var, run, alpha=.25)
-    plt.title("Test runs Above and Below")
-    plt.xlim(0, len(run))
-    plt.axhline(mean, color='red', label="media de la muestra")
-    plt.xlabel("muestra n")
-    plt.ylabel("valor de muestra")
-    plt.legend()
-    plt.show()
 
 
 def reverse_arrangements(muestra):
@@ -177,24 +168,86 @@ def reverse_arrangements(muestra):
                 cont += 1
     print(colored("PRUEBA DE ARREGLOS INVERSOS ", "magenta"))
     if (min < cont) and (cont <= max):
-        print(colored("La hipótesis nula es aceptada porque nuestro valor está dentro de los parámetros", "green"))
+        print(colored("La hipótesis nula es aceptada porque nuestro valor pues se cumple", "green"))
     else:
-        print(colored("la hipótesis no es aceptada porque no cumple con los parámetros", "red"))
+        print(colored("la hipótesis no es aceptada porque no cumple", "red"))
     print(str(min) + ' < ' + colored(str(cont), "blue") + ' <= ' + str(max))
+
+def fix_cont(cont):
+    c = [0] * 5
+    c[0] = cont[0]
+    c[1] = cont[1]
+    c[2] = cont[2]
+    c[3] = cont[3]
+    c[4] = cont[4] + cont[5] + cont[6]
+    return c
+
+def poker_test(muestra, n):
+    prob = [0.3024 * n, 0.5040 * n, 0.1080 * n, 0.072 * n, 0.0090 * n + 0.0045 * n + 0.0001 * n]
+    contador = [0] * 7
+    for i in range(0, len(muestra)):
+        if muestra[i] == 1:
+            m = str(int(muestra[i] * 10000))
+        else:
+            m = str(int(muestra[i] * 100000))
+        poker = [0] * 5
+        for j in range(0, len(m)):
+            poker[j] = int(m[j])
+        poker = np.bincount(poker)
+        par = pok = trio = gene = 0
+        for p in poker:
+            if p == 2:
+                par += 1
+            elif p == 3:
+                trio = 1
+            elif p == 4:
+                pok = 1
+            elif p == 5:
+                gene = 1
+        if par == trio == 1:
+            contador[4] += 1  # full
+        elif par == 2:
+            contador[2] += 1  # par doble
+        elif par == 1:
+            contador[1] += 1  # par simple
+        elif trio == 1:
+            contador[3] += 1  # trio
+        elif pok == 1:
+            contador[5] += 1  # poker
+        elif gene == 1:
+            contador[6] += 1  # generala
+        else:
+            contador[0] += 1  # todos diferentes
+    contador = fix_cont(contador)
+    parametro = 0
+    for i in range(0, len(contador)):
+        parametro += ((prob[i] - contador[i]) ** 2) / prob[i]
+    alpha = 0.05
+    grad_lib = len(contador) - 1
+    chi = ss.chi2.ppf(1 - alpha, grad_lib)
+    print(colored("PRUEBA DE POKER ", "magenta"))
+    if parametro < chi:
+        print(colored("Se acepta la hipotesis de que los números están ordenados al azar pues", "green"))
+    else:
+        print(colored("No se acepta la hipotesis de que los números están ordenados al azar pues", "red"))
+
+    print(colored(str(parametro), "blue") + ' <= ' + str(chi))
+
+
 
 
 seed1 = 1111
 seed2 = 7891
+n = 1000
 #x = generador_cc(9849, 5,1000)
 #x = generador_pmc(1234, 100)
-x = generador_pmc(seed1, 50)
-# y = generador_pmc(seed2, 100)
+x = generador_cc(seed1,66, n)
+y = generador_cc(seed2,90, n)
 chi_cuadrado(x)
-# print()
-# #runs_above_below(x)
-# print()
-# #reverse_arrangements(x)
-# print()
-#plot_(x, y)
-
-
+print()
+runs_above_below(x)
+print()
+reverse_arrangements(x)
+print()
+poker_test(x,n)
+plot_(x, y)
