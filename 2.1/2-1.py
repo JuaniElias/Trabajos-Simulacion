@@ -71,22 +71,26 @@ def normalizar(a):
     return arreglo
 
 
+def plot_hist(celdas):
+    cant_celdas = 10
+    # Se crea la lista con los intervalos de las clases
+    divisiones = (list(map(lambda x: x / cant_celdas, range(1, cant_celdas + 1, 1))))
+    divisiones = list(map(str, divisiones))
+    plt.title("Gráfico de barras de frecuencias en la prueba de Chi Cuadrado")
+    for i in range(0, lon):
+        plt.bar(divisiones, celdas[i], alpha=1/10)
+    plt.xlabel("Clases")
+    plt.ylabel("Frecuencias")
+    plt.show()
+
+
 def chi_cuadrado(muestra, cant_celdas):
     celdas = contar_observ(muestra, cant_celdas)
     e = len(muestra) / cant_celdas
     chi = 0
     for o in celdas:
         chi += ((o - e) ** 2) / e
-    # Se crea la lista con los intervalos de las clases
-    """divisiones = (list(map(lambda x: x / cant_celdas, range(1, cant_celdas + 1, 1))))
-    divisiones = list(map(str, divisiones))
-
-    plt.bar(divisiones, celdas)
-    plt.xlabel("Clases")
-    plt.ylabel("Frecuencias")
-    plt.show()"""
-
-    return chi
+    return chi, celdas
 
 
 def contar_observ(muestra, cant_celdas):
@@ -184,12 +188,15 @@ def poker_test(muestra):
 def estudio_chi2():
     cant_celdas = 10
     chi = 0
+    df_clases = []
     # Uso scipy para calcular el chi cuadrado
     valor = ss.chi2.ppf(1 - alpha, (cant_celdas - 1) * lon)
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_cc(seed,56, lon_muestra)
-        chi += chi_cuadrado(serie, cant_celdas)
+        serie = generador_gcl(seed, lon_muestra)
+        aux, clases = chi_cuadrado(serie, cant_celdas)
+        chi += aux
+        df_clases.append(clases)
     print(colored("PRUEBA DE BONDAD DE AJUSTE", "magenta"))
     if chi < valor:
         print(colored("La hipótesis nula es aceptada porque la prueba es menor que el valor crítico", "green"))
@@ -200,13 +207,14 @@ def estudio_chi2():
     print("el valor critico con alpha= " + colored(str(alpha), "blue") + " y grado de libertad= " +
           colored(str((cant_celdas - 1) * lon), "blue") + " es el siguiente --> " + colored(str(valor), "blue"))
     print()
+    plot_hist(df_clases)
 
 
 def estudio_AaBM():
     a = b = 0
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_cc(seed,56, lon_muestra)
+        serie = generador_gcl(seed, lon_muestra)
         c, d = runs_above_below(serie)
         a += c
         b += d
@@ -234,7 +242,7 @@ def estudio_RA():
     max = int(row[alpha / 2])
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_cc(seed,56, lon_muestra)
+        serie = generador_gcl(seed, lon_muestra)
         cont += reverse_arrangements(serie)
     print(colored("PRUEBA DE ARREGLOS INVERSOS ", "magenta"))
     if (min < cont / lon) and (cont / lon <= max):
@@ -252,7 +260,7 @@ def estudio_poker():
     contador = [0] * 5
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_cc(seed, 56, lon_muestra)
+        serie = generador_gcl(seed, lon_muestra)
         cont = poker_test(serie)
         for j in range(0, len(contador)):
             contador[j] += cont[j]
