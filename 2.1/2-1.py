@@ -1,3 +1,5 @@
+import random
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 from decimal import Decimal
@@ -14,6 +16,13 @@ def completar_ceros(x):
         x = '0' + x
     return x
 
+
+def generador_python(seed, n):
+    random.seed(seed)
+    poblacion = []
+    for i in range(0, n):
+        poblacion.append(random.random())
+    return poblacion
 
 def generador_pmc(seed, n):
     poblacion = [seed]
@@ -85,16 +94,16 @@ def plot_hist(celdas):
 
 
 def plot_poker(a, b):
-    clases = ["Diferentes", "Par", "Par doble", "Trio", "Full-House"]
+    clases = ["Diferentes", "Par", "Par doble", "Trio", "Full-House", "Poker", "Quintilla"]
     for i in range(0, len(b)):
         b[i] *= lon_muestra
-    fig, (ax1, ax2) = plt.subplots(2)
+    fig, (ax1, ax2) = plt.subplots(2, sharex=True)
     fig.suptitle("Gráfico de barras de frecuencias en la prueba de poker")
     for i in range(0, lon):
         ax1.bar(clases, a[i], alpha=1/10)
     ax2.bar(clases, b)
-    ax1.set_title("Valores Observados en "+str(lon)+" muestras")
-    ax2.set_title("Valores Esperados")
+    ax1.set_title("Valores Observados por cada muestra")
+    ax2.set_title("Valor Esperados por muestra")
     plt.show()
 
 
@@ -152,12 +161,13 @@ def reverse_arrangements(muestra):
 
 
 def fix_cont(cont):
-    c = [0] * 5
+    c = [0] * 6
     c[0] = cont[0]
     c[1] = cont[1]
     c[2] = cont[2]
     c[3] = cont[3]
-    c[4] = cont[4] + cont[5] + cont[6]
+    c[4] = cont[4]
+    c[5] = cont[5] + cont[6]
     return c
 
 
@@ -196,7 +206,7 @@ def poker_test(muestra):
             contador[6] += 1  # generala
         else:
             contador[0] += 1  # todos diferentes
-    return fix_cont(contador)
+    return contador
 
 
 def estudio_chi2():
@@ -207,7 +217,7 @@ def estudio_chi2():
     valor = ss.chi2.ppf(1 - alpha, (cant_celdas - 1) * lon)
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_gcl(seed, lon_muestra)
+        serie = generador_python(seed, lon_muestra)
         aux, clases = chi_cuadrado(serie, cant_celdas)
         chi += aux
         df_clases.append(clases)
@@ -228,7 +238,7 @@ def estudio_AaBM():
     a = b = 0
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_gcl(seed, lon_muestra)
+        serie = generador_python(seed, lon_muestra)
         c, d = runs_above_below(serie)
         a += c
         b += d
@@ -256,7 +266,7 @@ def estudio_RA():
     max = int(row[alpha / 2])
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_gcl(seed, lon_muestra)
+        serie = generador_python(seed, lon_muestra)
         cont += reverse_arrangements(serie)
     print(colored("PRUEBA DE ARREGLOS INVERSOS ", "magenta"))
     if (min < cont / lon) and (cont / lon <= max):
@@ -268,12 +278,12 @@ def estudio_RA():
 
 
 def estudio_poker():
-    prob = [0.3024, 0.5040, 0.1080, 0.072, 0.0090 + 0.0045 + 0.0001]
-    contador = [0] * 5
+    prob = [0.3024, 0.5040, 0.1080, 0.072, 0.0090, 0.0045, 0.0001]
+    contador = [0] * 7
     graf = []
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_gcl(seed, lon_muestra)
+        serie = generador_python(seed, lon_muestra)
         cont = poker_test(serie)
         graf.append(cont)
         for j in range(0, len(contador)):
@@ -293,17 +303,17 @@ def estudio_poker():
     plot_poker(graf, prob)
 
 
-seed1 = 1111
-seed2 = 7891
+seed1 = random.randint(1000,9999)
+seed2 = random.randint(1000,9999)
 lon_muestra = 1000
 lon = 60
 alpha = 0.05
 
-estudio_chi2()
+"""estudio_chi2()
 estudio_AaBM()
 estudio_RA()
-estudio_poker()
-#x = generador_gcl(seed1, lon_muestra)
-#y = generador_gcl(seed2, lon_muestra)
+estudio_poker()"""
+x = generador_python(seed1, 5000)
+y = generador_python(seed2, 5000)
 
-#plot_(x, y)
+plot_(x, y)
