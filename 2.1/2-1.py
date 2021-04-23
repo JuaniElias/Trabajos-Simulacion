@@ -84,6 +84,20 @@ def plot_hist(celdas):
     plt.show()
 
 
+def plot_poker(a, b):
+    clases = ["Diferentes", "Par", "Par doble", "Trio", "Full-House"]
+    for i in range(0, len(b)):
+        b[i] *= lon_muestra
+    fig, (ax1, ax2) = plt.subplots(2)
+    fig.suptitle("Gráfico de barras de frecuencias en la prueba de poker")
+    for i in range(0, lon):
+        ax1.bar(clases, a[i], alpha=1/10)
+    ax2.bar(clases, b)
+    ax1.set_title("Valores Observados en "+str(lon)+" muestras")
+    ax2.set_title("Valores Esperados")
+    plt.show()
+
+
 def chi_cuadrado(muestra, cant_celdas):
     celdas = contar_observ(muestra, cant_celdas)
     e = len(muestra) / cant_celdas
@@ -254,19 +268,20 @@ def estudio_RA():
 
 
 def estudio_poker():
-    prob = [0.3024 * lon_muestra * lon, 0.5040 * lon_muestra * lon, 0.1080 * lon_muestra * lon,
-            0.072 * lon_muestra * lon,
-            0.0090 * lon_muestra * lon + 0.0045 * lon_muestra * lon + 0.0001 * lon_muestra * lon]
+    prob = [0.3024, 0.5040, 0.1080, 0.072, 0.0090 + 0.0045 + 0.0001]
     contador = [0] * 5
+    graf = []
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
         serie = generador_gcl(seed, lon_muestra)
         cont = poker_test(serie)
+        graf.append(cont)
         for j in range(0, len(contador)):
             contador[j] += cont[j]
     parametro = 0
     for i in range(0, len(contador)):
-        parametro += ((prob[i] - contador[i]) ** 2) / prob[i]
+        fe = (prob[i] * lon_muestra * lon)
+        parametro += ((fe - contador[i]) ** 2) / fe
     grad_lib = len(contador) - 1
     chi = ss.chi2.ppf(1 - alpha, grad_lib)
     print(colored("PRUEBA DE POKER ", "magenta"))
@@ -275,19 +290,20 @@ def estudio_poker():
     else:
         print(colored("No se acepta la hipotesis de que los números están ordenados al azar pues no se cumple", "red"))
     print(colored(str(parametro), "blue") + ' <= ' + str(chi))
+    plot_poker(graf, prob)
 
 
 seed1 = 1111
 seed2 = 7891
 lon_muestra = 1000
-lon = 30
+lon = 60
 alpha = 0.05
 
 estudio_chi2()
 estudio_AaBM()
 estudio_RA()
 estudio_poker()
-x = generador_gcl(seed1, lon_muestra)
-y = generador_gcl(seed2, lon_muestra)
+#x = generador_gcl(seed1, lon_muestra)
+#y = generador_gcl(seed2, lon_muestra)
 
-plot_(x, y)
+#plot_(x, y)
