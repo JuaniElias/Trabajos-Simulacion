@@ -18,17 +18,21 @@ def dist_gamma(media, r, a, k):
         for i in range(0,k):
             x += (-1/a) * np.log(r[i])
     else:
-        z = 0
+        ki = 0
         for i in range(0,k):
-            z += (r[i] - k/2)/np.sqrt(k/12)
+            ki += (r[i] - k/2)
+        z = ki / np.sqrt(k/12)
         for i in range(0,k):
-            x += (-1/a) * np.log(r[i]) + z ** 2
+            x += (-1/a) * np.log(r[i])
+        x += z ** 2
     return x
 
 def dist_norm(mu, sigma, k, r):
-    x = 0
+    ki = 0
     for i in range(0,k):
-        x += (sigma * ((12/k) ** (1/2)) ) * (r[i] - k/2) + mu
+        ki += (r[i] - k/2)
+    x = (sigma * ((12/k) ** (1/2)) ) * ki + mu
+
     return x
 
 def dist_chi2(a, m, k, r):
@@ -37,11 +41,13 @@ def dist_chi2(a, m, k, r):
         for i in range(0,k):
             x += (-1/a) * np.log(r[i])
     elif m < 30:
-        z = 0
+        ki = 0
         for i in range(0, k):
-            z += (r[i] - k / 2) / np.sqrt(k / 12)
-        for i in range(0,k):
-            x += (-1/a) * np.log(r[i]) + z ** 2
+            ki += (r[i] - k / 2)
+        z = ki / np.sqrt(k / 12)
+        for i in range(0, k):
+            x += (-1 / a) * np.log(r[i])
+        x += z ** 2
     else:
         chi = ss.chi2(1 - a, m)
         z = np.sqrt(chi) - np.sqrt(2 * m) - 1
@@ -49,7 +55,45 @@ def dist_chi2(a, m, k, r):
     return x
 
 def dist_logn(mu, sigma, k, r):
+    z = 0
     for i in range(0, k):
-        z += (r[i] - k / 2) / np.sqrt(k / 12)
+        z += (r[i] - (k / 2))
     x = np.exp(mu + sigma * ((k/12) ** (-1/2)) * z)
     return x
+
+def dist_geom(r, p):
+    q = 1 - p
+    x = math.log10(r)/math.log10(q)
+    return int(x)
+
+def dist_pascal(mu, sigma, r):
+    p = mu/sigma
+    k = (mu ** 2)/(sigma - mu)
+    ki = 0
+    if type(k) == int:
+        for i in range(0, k):
+            ki += math.log10(r[i])
+        x = ki / math.log10(1 - p)
+    else:
+        x = 0 # no entiendos
+    return x
+
+def dist_binom(mu, sigma, r):
+    p = (mu - sigma)/mu
+    n = int((mu ** 2)/(mu - sigma))
+    x = [0]
+    for i in range(1, n):
+        if r[i] <= p:
+            x.append(x[i-1] + 1)
+        else:
+            x.append(x[i - 1])
+    return x[n-1]
+
+def dist_hiperg():
+    #i  duno bru, explanation is kinda lame
+    return 0
+
+def dist_poisson():
+    #same
+    return 0
+
