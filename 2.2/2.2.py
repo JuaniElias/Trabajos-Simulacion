@@ -17,11 +17,13 @@ def dist_gamma(media, r, a, k):
     if media % 2 == 0:
         for i in range(0,k):
             x += (-1/a) * np.log(r[i])
+    elif k==1:
+        x = dist_exp(media, r[0])
     else:
         ki = 0
         for i in range(0,k):
-            ki += (r[i] - k/2)
-        z = ki / np.sqrt(k/12)
+            ki += r[i]
+        z = (ki - k/2) / np.sqrt(k/12)
         for i in range(0,k):
             x += (-1/a) * np.log(r[i])
         x += z ** 2
@@ -30,8 +32,8 @@ def dist_gamma(media, r, a, k):
 def dist_norm(mu, sigma, k, r):
     ki = 0
     for i in range(0,k):
-        ki += (r[i] - k/2)
-    x = (sigma * ((12/k) ** (1/2)) ) * ki + mu
+        ki += r[i]
+    x = (sigma * ((12/k) ** (1/2)) ) * (ki- k/2) + mu
 
     return x
 
@@ -81,16 +83,22 @@ def dist_pascal(mu, sigma, r):
 def dist_binom(mu, sigma, r):
     p = (mu - sigma)/mu
     n = int((mu ** 2)/(mu - sigma))
-    x = [0]
-    for i in range(1, n):
+    x = 0
+    for i in range(0, n):
         if r[i] <= p:
-            x.append(x[i-1] + 1)
-        else:
-            x.append(x[i - 1])
-    return x[n-1]
+            x += 1
+    return x
 
-def dist_hiperg():
-    #i  duno bru, explanation is kinda lame
+def dist_hiperg(Ne, n, p, r):
+    x = 0
+    for i in range(1, n):
+        if r[i-1] < p:
+            s = 1
+            x += 1
+        else:
+            s = 0
+        p = ((Ne * p) - s) / (Ne - 1)
+        Ne -= 1
     return 0
 
 def dist_poisson():
