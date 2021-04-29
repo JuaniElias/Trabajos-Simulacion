@@ -38,7 +38,6 @@ def dist_norm(mu, sigma, k):
     x = (sigma * (np.sqrt(12/k)) * (ki- k/2)) + mu
     return x
 
-
 def dist_binom(mu, sigma):
     p = (mu - sigma)/mu
     n = int((mu ** 2)/(mu - sigma))
@@ -79,8 +78,22 @@ def dist_poisson(l):
         ri *= random.random()
     return x
 
-def dist_disc():
-    return 0
+def estandarizar(a):
+    tot = sum(a)
+    a = a/tot
+    return a
+
+def dist_emp_discr(b, p, n):
+    u = random.random()
+    for j in range(1, n):
+        p1 = sum(p[:j])
+        p2 = sum(p[:j+1])
+        if u < p1:
+            x = b[0]
+        if p1 < u <= p2:
+            x = b[j]
+            break
+    return x
 
 def prueba_uni():
     uni_py = np.random.uniform(0,50,10000)
@@ -183,10 +196,21 @@ def prueba_poisson():
     plt.legend()
     plt.show()
 
+def prueba_emp_disc():
+    p = np.random.randint(1, 100, 50)
+    p = estandarizar(p)
+    b = sorted(random.sample(range(1, 50 * 2), 50))
+    emp_disc_sus = []
+    for i in range(100):
+        emp_disc_sus.append(dist_emp_discr(b, p, 50))
+    sns.ecdfplot(emp_disc_sus)
+    plt.show()
 
 
-prueba_uni()
+
+"""prueba_uni()
 prueba_exp()
 prueba_normal()
 prueba_bin()
-prueba_poisson()
+prueba_poisson()"""
+prueba_emp_disc()
