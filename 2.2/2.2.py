@@ -208,9 +208,9 @@ def prueba_emp_disc():
 
 
 
-"""prueba_uni()
+prueba_uni()
 prueba_exp()
 prueba_normal()
 prueba_bin()
-prueba_poisson()"""
+prueba_poisson()
 prueba_emp_disc()

@@ -217,7 +217,7 @@ def estudio_chi2():
     valor = ss.chi2.ppf(1 - alpha, (cant_celdas - 1) * lon)
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_python(seed, lon_muestra)
+        serie = generador_python(seed, lon_muestra)     #hardcodeado
         aux, clases = chi_cuadrado(serie, cant_celdas)
         chi += aux
         df_clases.append(clases)
@@ -303,17 +303,18 @@ def estudio_poker():
     plot_poker(graf, prob)
 
 
-seed1 = random.randint(1000,9999)
-seed2 = random.randint(1000,9999)
+
 lon_muestra = 1000
 lon = 60
 alpha = 0.05
 
-"""estudio_chi2()
+estudio_chi2()
 estudio_AaBM()
 estudio_RA()
-estudio_poker()"""
+estudio_poker()
+
+"""seed1 = random.randint(1000, 9999)
+seed2 = random.randint(1000, 9999)
 x = generador_python(seed1, 5000)
 y = generador_python(seed2, 5000)
-
-plot_(x, y)
+plot_(x, y)"""
