@@ -8,7 +8,7 @@ a_holding = a_shortage = holding_cost = incremental_cost = maxlag = mean_interde
 prob_distrib_demand = [0.0] * 26
 time_next_event = [0.0] *5
 
-def timing():
+def timing():       #siempre entra en el evento tipo 2
     global next_event_type, sim_time, num_events
     min_time_next_event = 10**29
     next_event_type = 0
@@ -51,7 +51,7 @@ def random_integer(prob):
     return i
 
 def demand():
-    global inv_level, time_next_event
+    global inv_level, time_next_event, mean_interdemand, prob_distrib_demand
     inv_level -= random_integer(prob_distrib_demand)
     time_next_event[2] = sim_time + np.exp(mean_interdemand)
 
