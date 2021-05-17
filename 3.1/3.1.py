@@ -6,22 +6,13 @@ import os
 amount = bigs = initial_inv_level = inv_level = next_event_type = num_events = num_months = num_value_demand = smalls = 0
 a_holding = a_shortage = holding_cost = incremental_cost = maxlag = mean_interdemand = minlag = setup_cost = shortage_cost = sim_time = time_last_event = total_ordering_cost = 0.0
 prob_distrib_demand = [0.0] * 26
-time_next_event = [0.0] * 5
+time_next_event = [0.0] * 4
 
 
-def timing():       # Siempre entra en el evento tipo 2
-    global next_event_type, sim_time, num_events
-    min_time_next_event = 10**29
-    next_event_type = 0
-    for i in range(1, num_events):
-        if time_next_event[i] < min_time_next_event:
-            min_time_next_event = time_next_event[i]
-            next_event_type = i
-    if next_event_type == 0:
-        # Lista de eventos vacía, se detiene la simulación
-        print(colored("lista de eventos vacía en el tiempo: ", "red") + str(sim_time))
-        # os._exit(1)
-    sim_time = min_time_next_event
+def timing():
+    global next_event_type, sim_time
+    sim_time = min(time_next_event)
+    next_event_type = np.argmin(time_next_event)
 
 
 def initialize():
@@ -35,16 +26,16 @@ def initialize():
     total_ordering_cost = a_holding = a_shortage = 0  # inicializa los contadores estadísticos
 
     # inicializa la lista de eventos
-    time_next_event[1] = 10 ** 30
-    time_next_event[2] = sim_time + np.random.exponential(mean_interdemand)
-    time_next_event[3] = num_months
-    time_next_event[4] = 0.0
+    time_next_event[0] = 10 ** 30
+    time_next_event[1] = sim_time + np.random.exponential(mean_interdemand)
+    time_next_event[2] = num_months
+    time_next_event[3] = 1
 
 
 def order_arrival():
     global inv_level, time_next_event, amount
     inv_level += amount
-    time_next_event[1] = 10**30     # Ya que no va a llegar otro pedido se saca este evento de la lista
+    time_next_event[0] = 10**30     # Ya que no va a llegar otro pedido se saca este evento de la lista
 
 
 def random_integer(prob):
@@ -58,7 +49,7 @@ def random_integer(prob):
 def demand():
     global inv_level, time_next_event, mean_interdemand, prob_distrib_demand
     inv_level -= random_integer(prob_distrib_demand)
-    time_next_event[2] = sim_time + np.random.exponential(mean_interdemand)
+    time_next_event[1] = sim_time + np.random.exponential(mean_interdemand)
 
 
 def evaluate():
@@ -68,8 +59,8 @@ def evaluate():
         amount = bigs - inv_level
         total_ordering_cost += setup_cost + incremental_cost * amount
         #se pone en la lista de eventos el pedido
-        time_next_event[1] = sim_time + np.random.uniform(minlag, maxlag)
-    time_next_event[4] = sim_time + 1                               # se pone en la lista de eventos la sig evaluación
+        time_next_event[0] = sim_time + np.random.uniform(minlag, maxlag)
+    time_next_event[3] += 1                               # se pone en la lista de eventos la sig evaluación
 
 
 def report():
@@ -113,16 +104,17 @@ for i in range(1, num_policies):
     smalls = small[i]
     bigs = big[i]
     initialize()
-    for i in range(0, num_months):
+    flag = True
+    while flag:
         timing()
         update_time_avg_stats()
-        if next_event_type == 1:
+        if next_event_type == 0:
             order_arrival()
-        elif next_event_type == 2:
+        elif next_event_type == 1:
             demand()
-        elif next_event_type == 4:
+        elif next_event_type == 3:
             evaluate()
         else:
             report()
-            break
+            flag = False
 
