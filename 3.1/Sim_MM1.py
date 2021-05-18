@@ -12,7 +12,7 @@ area_num_in_q = area_server_status = mean_interarrival = mean_service = sim_time
     total_of_delays = 0.0
 
 time_arrival = [0] * (Q_LIMIT + 1)
-time_next_event = [0] * 3
+time_next_event = [0] * 2
 
 
 def initialize():
@@ -34,34 +34,20 @@ def initialize():
     area_server_status = 0.0
 
     # Inicializa la lista de eventos. Como no hay ningún cliente, el evento de partida no se considera
-    time_next_event[1] = sim_time + np.random.exponential(mean_interarrival)
-    time_next_event[2] = 1.0e+30
+    time_next_event[0] = sim_time + np.random.exponential(mean_interarrival)
+    time_next_event[1] = 1.0e+30
 
 
 def timing():
-    global next_event_type, sim_time, num_events
-    min_time_next_event = 1.0e+29
-    next_event_type = 0
-    # Determinar que tipo de evento es el siguiente a ocurrir
-    for i in range(0, num_events):
-        if time_next_event[i] < min_time_next_event:
-            min_time_next_event = time_next_event[i]
-            next_event_type = i
-
-    # Verifica si la lista de eventos esta vacía o no.
-    if next_event_type == 0:
-        # La lista de eventos esta vacía y se detiene la sim.
-        print("Lista de eventos vacía en el tiempo ", sim_time)
-        exit(1)
-
-    # La lista de eventos no esta vacía entonces se avanza el reloj de simulación
-    sim_time = min_time_next_event
+    global next_event_type, sim_time
+    sim_time = min(time_next_event)
+    next_event_type = np.argmin(time_next_event)
 
 
 def arrive():
     global num_in_q, time_arrival, time_next_event, server_status, total_of_delays
     # Planea el siguiente arrivo
-    time_next_event[1] = sim_time + np.random.exponential(mean_interarrival)
+    time_next_event[0] = sim_time + np.random.exponential(mean_interarrival)
 
     # Valida si el servidor esta ocupado
     if server_status == BUSY:
@@ -82,7 +68,7 @@ def arrive():
         # Incrementa el numero de clientes en espera y se pone al servidor en estado de ocupado
         server_status = BUSY
         # Asigna un tiempo de partida para fin de servicio
-        time_next_event[2] = sim_time + np.random.exponential(mean_service)
+        time_next_event[1] = sim_time + np.random.exponential(mean_service)
 
 
 def depart():
@@ -92,18 +78,18 @@ def depart():
     if num_in_q == 0:
         # La cola esta vacía, se pone el servidor como ocioso y se deja de considerar el evento de partida
         server_status = IDLE
-        time_next_event[2] = 1.0e+30
+        time_next_event[1] = 1.0e+30
 
     else:
         # La cola no esta vacía, se decrementa el numero de clientes en cola
         num_in_q -= 1
         # Se calcula el delay del cliente que empieza el servicio y se actualiza el acumulador de delay
-        delay = sim_time - time_arrival[1]
+        delay = sim_time - time_arrival[1]  # wtf por qué 1?
         total_of_delays += delay
 
         # Incrementa el numero de clientes demorado y se programa la partida
         num_custs_delayed += 1
-        time_next_event[2] = sim_time + np.random.exponential(mean_service)
+        time_next_event[1] = sim_time + np.random.exponential(mean_service)
         # Mueve a cada cliente en cola una posición para arriba
         # / * Move each customer in queue ( if any) up one place.* /
         for i in range(0, num_in_q):
@@ -148,12 +134,10 @@ def main():
         update_time_avg_stats()
 
         # Llamar a la función que corresponda luego.
-        if next_event_type == 1:
+        if next_event_type == 0:
             arrive()
-            break
-        elif next_event_type == 2:
+        elif next_event_type == 1:
             depart()
-            break
 
     # Generar reporte y terminar la sim
     report()
