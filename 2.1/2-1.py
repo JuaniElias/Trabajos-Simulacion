@@ -308,7 +308,7 @@ def valida(opcion, longitud, seed):
     elif opcion == 2:
         serie = generador_gcl(seed, longitud)
     elif opcion == 3:
-        serie = generador_cc(seed, 6, longitud)
+        serie = generador_cc(seed, 56, longitud)
     else:
         serie = generador_python(seed, longitud)
     return serie
