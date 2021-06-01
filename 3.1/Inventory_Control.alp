@@ -121,14 +121,14 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
+							<Code><![CDATA[60]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1621347808914</Id>
 					<Name><![CDATA[OrderReceived]]></Name>
-					<X>130</X><Y>500</Y>
+					<X>20</X><Y>470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -143,6 +143,36 @@
 				<Variable Class="PlainVariable">
 					<Id>1621348185427</Id>
 					<Name><![CDATA[HoldingCosts]]></Name>
+					<X>130</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1621348203522</Id>
+					<Name><![CDATA[OrderingCosts]]></Name>
+					<X>130</X><Y>350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1621348252707</Id>
+					<Name><![CDATA[StockoutCosts]]></Name>
 					<X>130</X><Y>380</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -150,36 +180,15 @@
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1621348203522</Id>
-					<Name><![CDATA[OrderingCosts]]></Name>
-					<X>130</X><Y>410</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1621348252707</Id>
-					<Name><![CDATA[StockoutCosts]]></Name>
-					<X>130</X><Y>440</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1621348273649</Id>
 					<Name><![CDATA[ServiceLevel]]></Name>
-					<X>20</X><Y>470</Y>
+					<X>20</X><Y>320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -191,7 +200,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1621348284921</Id>
 					<Name><![CDATA[TotalSales]]></Name>
-					<X>20</X><Y>500</Y>
+					<X>20</X><Y>350</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -203,7 +212,31 @@
 				<Variable Class="PlainVariable">
 					<Id>1621348295102</Id>
 					<Name><![CDATA[RetailShortage]]></Name>
-					<X>20</X><Y>530</Y>
+					<X>20</X><Y>380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1622062133388</Id>
+					<Name><![CDATA[Order]]></Name>
+					<X>20</X><Y>440</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1622068064693</Id>
+					<Name><![CDATA[D]]></Name>
+					<X>20</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -213,129 +246,9 @@
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1621345778741</Id>
-					<Name><![CDATA[OrderQuantity]]></Name>
-					<X>20</X><Y>80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[400]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621345778739</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1621346627799</Id>
-					<Name><![CDATA[DevDemand]]></Name>
-					<X>20</X><Y>140</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[16]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621346627797</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1621346648254</Id>
-					<Name><![CDATA[MeanDemand]]></Name>
-					<X>20</X><Y>170</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[80]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621346648252</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1621346692799</Id>
-					<Name><![CDATA[DevLT]]></Name>
-					<X>20</X><Y>200</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621346692797</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1621346708749</Id>
-					<Name><![CDATA[MeanLT]]></Name>
-					<X>20</X><Y>230</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[3]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621346708747</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1621346727311</Id>
 					<Name><![CDATA[LeadTime]]></Name>
-					<X>20</X><Y>260</Y>
+					<X>20</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -357,57 +270,9 @@
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1621346762376</Id>
-					<Name><![CDATA[Demand]]></Name>
-					<X>20</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[80]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621346762374</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1621347016538</Id>
-					<Name><![CDATA[t_Period]]></Name>
-					<X>20</X><Y>290</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[5]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1621347016536</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1621347669374</Id>
-					<Name><![CDATA[ROP]]></Name>
-					<X>20</X><Y>320</Y>
+					<Name><![CDATA[s]]></Name>
+					<X>20</X><Y>170</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -417,7 +282,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[240]]></Code>
+							<Code><![CDATA[20]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1621347669372</Id>
@@ -431,17 +296,17 @@
 				<Variable Class="Parameter">
 					<Id>1621347739944</Id>
 					<Name><![CDATA[S]]></Name>
-					<X>20</X><Y>350</Y>
+					<X>20</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
+						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[500]]></Code>
+							<Code><![CDATA[40]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1621347739942</Id>
@@ -455,7 +320,7 @@
 				<Variable Class="Parameter">
 					<Id>1621348139266</Id>
 					<Name><![CDATA[HoldingCost]]></Name>
-					<X>20</X><Y>380</Y>
+					<X>20</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -478,8 +343,8 @@
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1621348151247</Id>
-					<Name><![CDATA[OrderingCost]]></Name>
-					<X>20</X><Y>410</Y>
+					<Name><![CDATA[SetupCost]]></Name>
+					<X>20</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -489,7 +354,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[10]]></Code>
+							<Code><![CDATA[32]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1621348151245</Id>
@@ -503,7 +368,7 @@
 				<Variable Class="Parameter">
 					<Id>1621348163403</Id>
 					<Name><![CDATA[StockoutCost]]></Name>
-					<X>20</X><Y>440</Y>
+					<X>20</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -524,11 +389,56 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1622067672910</Id>
+					<Name><![CDATA[u]]></Name>
+					<X>20</X><Y>50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1622067672908</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1622070513543</Id>
+					<Name><![CDATA[i]]></Name>
+					<X>130</X><Y>200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[3]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1622070513541</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Events>
 				<Event>
 					<Id>1621345792499</Id>
-					<Name><![CDATA[Ordering]]></Name>
+					<Name><![CDATA[Demanding]]></Name>
 					<X>20</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -547,33 +457,31 @@
 						<OccurrenceDate>1621411200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
 							<Code><![CDATA[0]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[exponential(0.33333, 0)]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[Demand = round( max (normal(DevDemand,MeanDemand),0));
-LeadTime = round( max (normal(DevLT,MeanLT),0));
+					<Action><![CDATA[u = uniform_pos();
+if (u <= 0.1666){D = 1;}
+else if(u <= 0.5){D = 2;}
+else if(u <= 0.8333){D = 3;}
+else{D = 4;}
 
-InventoryLevel-= Demand;
-
-if (InventoryLevel <= ROP && !OrderReceived)
-{NewOrder.restart( LeadTime );
-OrderReceived = true;
-}
+InventoryLevel-= D;
 
 // Compute sales
 if (InventoryLevel > 0)
-TotalSales+= Demand;
+TotalSales+= D;
 ]]></Action>
 				</Event>
 				<Event>
 					<Id>1621347794104</Id>
-					<Name><![CDATA[NewOrder]]></Name>
-					<X>130</X><Y>470</Y>
+					<Name><![CDATA[Arrival]]></Name>
+					<X>20</X><Y>410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -599,14 +507,13 @@ TotalSales+= Demand;
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[InventoryLevel += S;
-OrderingCosts += OrderingCost;
+					<Action><![CDATA[InventoryLevel += Order;
 OrderReceived = false;]]></Action>
 				</Event>
 				<Event>
 					<Id>1621348363093</Id>
 					<Name><![CDATA[CostUpdate]]></Name>
-					<X>20</X><Y>560</Y>
+					<X>130</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -633,22 +540,24 @@ OrderReceived = false;]]></Action>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
 					<Action><![CDATA[if (InventoryLevel < 0){
-RetailShortage = RetailShortage - InventoryLevel; 
+RetailShortage -= InventoryLevel; 
 }
-HoldingCosts = HoldingCosts + (HoldingCost * (InventoryLevel/2));
+else{
+HoldingCosts += (HoldingCost * (InventoryLevel/2));
+}
 ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Action>
 				</Event>
 				<Event>
 					<Id>1621348615725</Id>
 					<Name><![CDATA[Stockout]]></Name>
-					<X>20</X><Y>590</Y>
+					<X>130</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="timeout" Mode="occuresOnce">
+					<Properties TriggerType="timeout" Mode="cyclic">
 						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[29]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</Timeout>
 						<Rate Class="CodeUnitValue">
@@ -662,12 +571,51 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[29]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[StockoutCosts = StockoutCosts + StockoutCosts * RetailShortage]]></Action>
+					<Action><![CDATA[StockoutCosts += StockoutCost * RetailShortage;
+]]></Action>
+				</Event>
+				<Event>
+					<Id>1622065642455</Id>
+					<Name><![CDATA[Ordering]]></Name>
+					<X>130</X><Y>230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1622102400000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[29]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[29]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[LeadTime = uniform(15, 29);
+
+if (InventoryLevel <= s && !OrderReceived)
+{Arrival.restart( LeadTime );
+OrderReceived = true;
+Order = S - InventoryLevel;
+OrderingCosts += SetupCost + i * Order; 
+}]]></Action>
 				</Event>
 			</Events>
 			<AgentLinks>
@@ -729,14 +677,14 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Width>490</Width>
-					<Height>210</Height>
+					<Height>290</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
 						<Width>410</Width>
-						<Height>120</Height>
+						<Height>200</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -769,6 +717,16 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 						<PointStyle>NONE</PointStyle>
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Re-Order point]]></Title>
+					<Id>0</Id>
+					<Expression><![CDATA[my_dataset1]]></Expression>
+					<Color>-12799119</Color>
+					<Expression2><![CDATA[s]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>NONE</PointStyle>
+						<LineWidth>1.0</LineWidth>
+					</DatasetExpression>
 					<SamplesToKeep>1000</SamplesToKeep>
 					<TimeWindowExpression><![CDATA[30]]></TimeWindowExpression>
 					<FillAreaUnderLine>false</FillAreaUnderLine>
@@ -777,7 +735,7 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
     			<TimePlot>
 					<Id>1621348811685</Id>
 					<Name><![CDATA[plot]]></Name>
-					<X>530</X><Y>200</Y>
+					<X>700</X><Y>10</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -795,15 +753,15 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>390</Width>
-					<Height>170</Height>
+					<Width>430</Width>
+					<Height>260</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>310</Width>
-						<Height>80</Height>
+						<YOffset>20</YOffset>
+						<Width>350</Width>
+						<Height>180</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -843,7 +801,7 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
     			<TimePlot>
 					<Id>1621348828492</Id>
 					<Name><![CDATA[plot1]]></Name>
-					<X>530</X><Y>370</Y>
+					<X>500</X><Y>290</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -861,15 +819,15 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>390</Width>
-					<Height>170</Height>
+					<Width>540</Width>
+					<Height>250</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>310</Width>
-						<Height>80</Height>
+						<Width>460</Width>
+						<Height>160</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -909,7 +867,7 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
     			<StackChart>
 					<Id>1621349044895</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>260</X><Y>240</Y>
+					<X>240</X><Y>270</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -982,7 +940,7 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 				<Text>
 					<Id>1621350012766</Id>
 					<Name><![CDATA[Total]]></Name>
-					<X>320</X><Y>510</Y>
+					<X>290</X><Y>550</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1094,31 +1052,10 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 
 			<Parameters>			
 				<Parameter>
-					<ParameterName><![CDATA[DevDemand]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[MeanDemand]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[DevLT]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[MeanLT]]></ParameterName>
-				</Parameter>
-				<Parameter>
 					<ParameterName><![CDATA[LeadTime]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[Demand]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[t_Period]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[OrderQuantity]]></ParameterName>
-				</Parameter>
-				<Parameter>
-					<ParameterName><![CDATA[ROP]]></ParameterName>
+					<ParameterName><![CDATA[s]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[S]]></ParameterName>
@@ -1127,10 +1064,16 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 					<ParameterName><![CDATA[HoldingCost]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[OrderingCost]]></ParameterName>
+					<ParameterName><![CDATA[SetupCost]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[StockoutCost]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[u]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[i]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
@@ -1142,11 +1085,11 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>
-				<StopOption><![CDATA[Never]]></StopOption>
+				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1621296000000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1623974400000]]></FinalDate>	
-				<FinalTime><![CDATA[100.0]]></FinalTime>	
+				<FinalDate><![CDATA[1621299600000]]></FinalDate>	
+				<FinalTime><![CDATA[3600.0]]></FinalTime>	
 			</ModelTimeProperties>
 			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	

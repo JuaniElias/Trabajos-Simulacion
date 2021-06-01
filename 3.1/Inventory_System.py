@@ -65,9 +65,9 @@ def evaluate():
 
 def report():
     global holding_cost, total_ordering_cost, num_months, shortage_cost, a_shortage, a_shortage
-    avg_ordering_cost = total_ordering_cost / num_months
-    avg_holding_cost = holding_cost * a_holding / num_months
-    avg_shortage_cost = shortage_cost * a_shortage / num_months
+    avg_ordering_cost = total_ordering_cost #/ num_months
+    avg_holding_cost = holding_cost * a_holding #/ num_months
+    avg_shortage_cost = shortage_cost * a_shortage #/ num_months
     tot = avg_shortage_cost + avg_holding_cost + avg_ordering_cost
     print("("+str(smalls)+", "+str(bigs)+")     "+str(tot)+"    "+str(avg_ordering_cost)+"  "+str(avg_holding_cost)+"   "+str(avg_shortage_cost))
 

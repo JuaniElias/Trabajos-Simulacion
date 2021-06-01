@@ -1,5 +1,5 @@
 import random
-
+import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from decimal import Decimal
@@ -46,10 +46,10 @@ def generador_gcl(seed, n):
     return poblacion
 
 
-def generador_cc(seed, z, n):
-    a = 2 * z
-    c = (2 * z) + 1
-    m = 2 ** z
+def generador_cc(seed, g, n):
+    a = 2 * g
+    c = (2 * g) + 1
+    m = 2 ** g
     for i in range(1, 100):
         if (i - a) % 4 == 1:
             b = i
@@ -209,7 +209,7 @@ def poker_test(muestra):
     return contador
 
 
-def estudio_chi2():
+def estudio_chi2(op):
     cant_celdas = 10
     chi = 0
     df_clases = []
@@ -217,7 +217,7 @@ def estudio_chi2():
     valor = ss.chi2.ppf(1 - alpha, (cant_celdas - 1) * lon)
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_python(seed, lon_muestra)     #hardcodeado
+        serie = valida(op, lon_muestra, seed)
         aux, clases = chi_cuadrado(serie, cant_celdas)
         chi += aux
         df_clases.append(clases)
@@ -234,11 +234,11 @@ def estudio_chi2():
     plot_hist(df_clases)
 
 
-def estudio_AaBM():
+def estudio_AaBM(op):
     a = b = 0
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_python(seed, lon_muestra)
+        serie = valida(op, lon_muestra, seed)
         c, d = runs_above_below(serie)
         a += c
         b += d
@@ -256,7 +256,7 @@ def estudio_AaBM():
     print()
 
 
-def estudio_RA():
+def estudio_RA(op):
     df_reverse = pd.read_excel("critical-arrangement.xlsx")
     df_reverse = pd.DataFrame(df_reverse)
     n = 100
@@ -266,7 +266,7 @@ def estudio_RA():
     max = int(row[alpha / 2])
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_python(seed, lon_muestra)
+        serie = valida(op, lon_muestra, seed)
         cont += reverse_arrangements(serie)
     print(colored("PRUEBA DE ARREGLOS INVERSOS ", "magenta"))
     if (min < cont / lon) and (cont / lon <= max):
@@ -277,13 +277,13 @@ def estudio_RA():
     print()
 
 
-def estudio_poker():
+def estudio_poker(op):
     prob = [0.3024, 0.5040, 0.1080, 0.072, 0.0090, 0.0045, 0.0001]
     contador = [0] * 7
     graf = []
     for i in range(0, lon):
         seed = int(str(datetime.now().time())[-4:])
-        serie = generador_python(seed, lon_muestra)
+        serie = valida(op, lon_muestra, seed)
         cont = poker_test(serie)
         graf.append(cont)
         for j in range(0, len(contador)):
@@ -302,19 +302,41 @@ def estudio_poker():
     print(colored(str(parametro), "blue") + ' <= ' + str(chi))
     plot_poker(graf, prob)
 
-
+def valida(opcion, longitud, seed):
+    if opcion == 1:
+        serie = generador_pmc(seed, longitud)
+    elif opcion == 2:
+        serie = generador_gcl(seed, longitud)
+    elif opcion == 3:
+        serie = generador_cc(seed, 6, longitud)
+    else:
+        serie = generador_python(seed, longitud)
+    return serie
 
 lon_muestra = 1000
 lon = 60
 alpha = 0.05
-
-estudio_chi2()
-estudio_AaBM()
-estudio_RA()
-estudio_poker()
-
-"""seed1 = random.randint(1000, 9999)
-seed2 = random.randint(1000, 9999)
-x = generador_python(seed1, 5000)
-y = generador_python(seed2, 5000)
-plot_(x, y)"""
+flag = True
+while flag:
+    print("")
+    print(colored("Estudios para:", "green"))
+    print("1. Generador middle-square")
+    print("2. Generador GCL")
+    print("3. Generador GCC")
+    print("4. Generador Python")
+    print("")
+    op = int(input(colored("Ingrese generador que quiera estudiar: ","blue")))
+    print("")
+    estudio_chi2(op)
+    estudio_AaBM(op)
+    estudio_RA(op)
+    estudio_poker(op)
+    seed1 = random.randint(1000, 9999)
+    seed2 = random.randint(1000, 9999)
+    x = valida(op, 5000, seed1)
+    y = valida(op, 5000, seed2)
+    plot_(x, y)
+    print("")
+    x = input(colored("Desea realizar otro estudiar? S/N    ", "red")).upper()
+    if x == 'N':
+        flag = False
