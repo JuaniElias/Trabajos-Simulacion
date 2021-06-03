@@ -171,21 +171,6 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1621348252707</Id>
-					<Name><![CDATA[StockoutCosts]]></Name>
-					<X>130</X><Y>380</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
 					<Id>1621348273649</Id>
 					<Name><![CDATA[ServiceLevel]]></Name>
 					<X>20</X><Y>320</Y>
@@ -245,6 +230,18 @@
 						<Type><![CDATA[double]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1622754410919</Id>
+					<Name><![CDATA[StockoutCosts]]></Name>
+					<X>130</X><Y>380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1621346727311</Id>
 					<Name><![CDATA[LeadTime]]></Name>
@@ -258,7 +255,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[uniform(15, 30)]]></Code>
+							<Code><![CDATA[0]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1621346727309</Id>
@@ -476,6 +473,7 @@ InventoryLevel-= D;
 // Compute sales
 if (InventoryLevel > 0)
 TotalSales+= D;
+CostUpdate.restart(0.00001);
 ]]></Action>
 				</Event>
 				<Event>
@@ -508,7 +506,8 @@ TotalSales+= D;
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
 					<Action><![CDATA[InventoryLevel += Order;
-OrderReceived = false;]]></Action>
+OrderReceived = false;
+CostUpdate.restart(0.00001);]]></Action>
 				</Event>
 				<Event>
 					<Id>1621348363093</Id>
@@ -518,7 +517,7 @@ OrderReceived = false;]]></Action>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="timeout" Mode="cyclic">
+					<Properties TriggerType="timeout" Mode="occuresOnce">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
@@ -540,44 +539,11 @@ OrderReceived = false;]]></Action>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
 					<Action><![CDATA[if (InventoryLevel < 0){
-RetailShortage -= InventoryLevel; 
-}
-else{
-HoldingCosts += (HoldingCost * (InventoryLevel/2));
-}
+RetailShortage -= InventoryLevel;
+StockoutCosts -= InventoryLevel * StockoutCost;} 
+else { 
+HoldingCosts += (HoldingCost * InventoryLevel);}
 ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Action>
-				</Event>
-				<Event>
-					<Id>1621348615725</Id>
-					<Name><![CDATA[Stockout]]></Name>
-					<X>130</X><Y>290</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties TriggerType="timeout" Mode="cyclic">
-						<Timeout Class="CodeUnitValue">
-							<Code><![CDATA[29]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-						</Timeout>
-						<Rate Class="CodeUnitValue">
-							<Code><![CDATA[1]]></Code>
-							<Unit Class="RateUnits"><![CDATA[PER_SECOND]]></Unit>
-						</Rate>
-						<OccurrenceAtTime>true</OccurrenceAtTime>
-						<OccurrenceDate>1621411200000</OccurrenceDate>
-						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[29]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-						</OccurrenceTime>
-						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[29]]></Code>
-							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
-						</RecurrenceCode>
-						<Condition><![CDATA[false]]></Condition>
-					</Properties>
-					<Action><![CDATA[StockoutCosts += StockoutCost * RetailShortage;
-]]></Action>
 				</Event>
 				<Event>
 					<Id>1622065642455</Id>
@@ -608,7 +574,9 @@ ServiceLevel = ((TotalSales + 1)/((TotalSales+1)+ RetailShortage)) * 100]]></Act
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[if (InventoryLevel <= s && !OrderReceived)
+					<Action><![CDATA[LeadTime = uniform(15, 30);
+
+if (InventoryLevel <= s && !OrderReceived)
 {Arrival.restart( LeadTime );
 OrderReceived = true;
 Order = S - InventoryLevel;
@@ -726,7 +694,7 @@ OrderingCosts += SetupCost + i * Order;
 						<LineWidth>1.0</LineWidth>
 					</DatasetExpression>
 					<DatasetExpression>  
-						<Title><![CDATA[Dataset Title 2]]></Title>
+						<Title><![CDATA[Zero]]></Title>
 					<Id>0</Id>
 					<Expression><![CDATA[my_dataset2]]></Expression>
 					<Color>-16777216</Color>
