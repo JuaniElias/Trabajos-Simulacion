@@ -47,15 +47,13 @@ def arrive():
         # VAlida si hubo overflow en la cola
         if num_in_q[-1] + 1 > Q_LIMIT:
             # La cola se sobrepaso de clientes en espera, se frena la sim
-            print("Overflow del arreglo time_arrival en el tiempo ", sim_time)
+            print("No se pudo tomar al cliente en el tiempo de simulación= ", sim_time)
             f += 1
-            # return False
         else:
             # El servidor esta ocupado, se incrementa el nro de clientes en cola
             num_in_q.append(num_in_q[-1] + 1)
             # Todavía hay lugar en la cola, se guarda el tiempo de arrivo del cliente que llega en el final de time_arrival
             time_arrival[num_in_q[-1]] = sim_time
-            # return True
 
 
     else:
@@ -151,6 +149,8 @@ def ploteano(prob):
     ax2.plot(delay_s, 'tab:orange')
     ax2.set_title("En el Sistema")
     fig.tight_layout()
+    avg_delay_q = sum(delay_q) / len(delay_q)
+    avg_delay_s = sum(delay_s) / len(delay_s)
 
     fig2, (ax3, ax4) = plt.subplots(2)
     fig2.suptitle("Número promedio de Clientes en 10 corridas")
@@ -159,6 +159,8 @@ def ploteano(prob):
     ax4.plot(number_s, 'tab:orange')
     ax4.set_title("En el Sistema")
     fig2.tight_layout()
+    avg_number_q = sum(number_q) / len(number_q)
+    avg_number_s = sum(number_s) / len(number_s)
 
     probability = prob_n_custs(prob)
     fig3, (ax5, ax6) = plt.subplots(2)
@@ -167,15 +169,21 @@ def ploteano(prob):
     ax6.plot(server_u, 'tab:orange')
     ax6.set_title("Utilización del sistema en 10 corridas")
     fig3.tight_layout()
+    avg_server_u = sum(server_u) / len(server_u)
 
     plt.show()
+    print("promedio delay q ", avg_delay_q)
+    print("promedio delay s ", avg_delay_s)
+    print("promedio number q ", avg_number_q)
+    print("promedio number s ", avg_number_s)
+    print("promedio server u ", avg_server_u)
 
 
 def main(z):
     global mean_interarrival, mean_service, num_delays_required, num_custs_delayed, next_event_type, num_events
     p = [0.25, 0.50, 0.75, 1, 1.25]
     mean_service = 0.5  # 2
-    mean_interarrival = 0.4
+    mean_interarrival = 0.66666
     num_delays_required = 1000
 
     num_events = 3
@@ -195,10 +203,10 @@ def main(z):
             depart()
 
     # Generar reporte y terminar la sim
-    # report(z)
+    report(z)
 
 
-Q_LIMIT = 50
+Q_LIMIT = 1000000
 BUSY = 1  # Mnemonics for server's being busy
 IDLE = 0  # and idle.
 
@@ -225,7 +233,5 @@ tot = 0
 for i in range(10):
     main(i)
     tot += num_custs_served
-# ploteano(prob)
-print('')
+ploteano(prob)
 print('F', f)
-print('Noice', tot - f)

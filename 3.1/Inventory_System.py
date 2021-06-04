@@ -100,6 +100,15 @@ def ploteano():
         ax.set(xlabel='nro corridas', ylabel='precio')
     fig.tight_layout()
     plt.show()
+    avg_holding = sum(costos_h) / len(costos_h)
+    avg_stockout = sum(costos_s) / len(costos_s)
+    avg_ordering = sum(costos_o) / len(costos_o)
+    avg_total = sum(costos_t) / len(costos_t)
+    print('('+str(smalls)+', '+str(bigs)+')')
+    print("holing", avg_holding)
+    print('stockout', avg_stockout)
+    print('ordering', avg_ordering)
+    print('total', avg_total)
 
 
 costos_o = [0] * 10
@@ -120,11 +129,11 @@ for z in range(10):
     minlag = 0.5
     maxlag = 1
     prob_distrib_demand = [0, 1 / 6, 3 / 6, 5 / 6, 1]
-    small = [0, 20, 20, 20, 20, 40, 40, 40, 60, 60]
-    big = [0, 40, 60, 80, 100, 60, 80, 100, 80, 100]
+    small = [0, 20, 20, 20, 20,     40, 40, 40,     60, 60]
+    big = [0,   40, 60, 80, 100,    60, 80, 100,    80, 100]
 
-    smalls = small[2]
-    bigs = big[2]
+    smalls = small[9]
+    bigs = big[9]
     initialize()
     flag = True
     while flag:
