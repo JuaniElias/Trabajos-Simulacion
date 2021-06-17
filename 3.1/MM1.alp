@@ -113,7 +113,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1621342831413</Id>
 					<Name><![CDATA[N_Queue]]></Name>
-					<X>20</X><Y>250</Y>
+					<X>20</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -125,7 +125,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1621342858855</Id>
 					<Name><![CDATA[N_System]]></Name>
-					<X>20</X><Y>280</Y>
+					<X>20</X><Y>230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -134,10 +134,25 @@
 						<Type><![CDATA[int]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1622830183838</Id>
+					<Name><![CDATA[Salidas]]></Name>
+					<X>20</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1622228466959</Id>
 					<Name><![CDATA[MeanInterarrival]]></Name>
-					<X>250</X><Y>340</Y>
+					<X>20</X><Y>450</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -161,7 +176,7 @@
 				<Variable Class="Parameter">
 					<Id>1622228479301</Id>
 					<Name><![CDATA[MeanService]]></Name>
-					<X>250</X><Y>310</Y>
+					<X>20</X><Y>420</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -185,7 +200,7 @@
 				<Variable Class="Parameter">
 					<Id>1622230721217</Id>
 					<Name><![CDATA[QLimit]]></Name>
-					<X>250</X><Y>280</Y>
+					<X>20</X><Y>390</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -473,11 +488,46 @@
 					</Points>
 				</Connector>
 			</Connectors>
+			<Events>
+				<Event>
+					<Id>1622830210587</Id>
+					<Name><![CDATA[Stop]]></Name>
+					<X>20</X><Y>360</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1622880000000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[if (Salidas == 1000){
+finishSimulation();
+}]]></Action>
+				</Event>
+			</Events>
 			<AnalysisData>
     			<Statistics>
 					<Id>1621342905239</Id>
 					<Name><![CDATA[statistics_Q]]></Name>
-					<X>20</X><Y>310</Y>
+					<X>20</X><Y>260</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -498,7 +548,7 @@
     			<Statistics>
 					<Id>1621342951207</Id>
 					<Name><![CDATA[statistics_S]]></Name>
-					<X>20</X><Y>340</Y>
+					<X>20</X><Y>290</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1083,7 +1133,7 @@ statistics_Q.add(N_Queue, time());]]></Code>
 				<EmbeddedObject>
 					<Id>1621342277035</Id>
 					<Name><![CDATA[resourcePool]]></Name>
-					<X>260</X><Y>220</Y>
+					<X>260</X><Y>40</Y>
 					<Label><X>-25</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1467,7 +1517,9 @@ statistics_Q.add(N_Queue, time());]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[N_System--;
-statistics_S.add(N_System, time());]]></Code>
+Salidas++;
+statistics_S.add(N_System, time());
+Stop.restart(0.00001);]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1808,7 +1860,7 @@ statistics_S.add(N_System, time());]]></Code>
     			<Histogram>
 					<Id>1621343291730</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>30</X><Y>360</Y>
+					<X>180</X><Y>200</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1826,15 +1878,15 @@ statistics_S.add(N_System, time());]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>390</Width>
-					<Height>210</Height>
+					<Width>420</Width>
+					<Height>240</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>310</Width>
-						<Height>120</Height>
+						<Width>340</Width>
+						<Height>150</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -1872,7 +1924,7 @@ statistics_S.add(N_System, time());]]></Code>
     			<Histogram>
 					<Id>1621343373152</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>540</X><Y>360</Y>
+					<X>600</X><Y>200</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1890,15 +1942,15 @@ statistics_S.add(N_System, time());]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>360</Width>
-					<Height>210</Height>
+					<Width>400</Width>
+					<Height>240</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>280</Width>
-						<Height>120</Height>
+						<Width>320</Width>
+						<Height>150</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -2044,7 +2096,7 @@ statistics_S.add(N_System, time());]]></Code>
 				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>
-				<StopOption><![CDATA[Stop at specified time]]></StopOption>
+				<StopOption><![CDATA[Never]]></StopOption>
 				<InitialDate><![CDATA[1621321200000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
 				<FinalDate><![CDATA[1621381200000]]></FinalDate>	
