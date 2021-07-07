@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 *************************************************
-	         AnyLogic Project File 
-*************************************************	         
+	         AnyLogic Project File
+*************************************************
 -->
 <AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.7.5.202106081839" AlpVersion="8.7.2">
 <Model>
 	<Id>1625656577731</Id>
-	<Name><![CDATA[Subway Entrace Hall]]></Name>
+	<Name><![CDATA[Subway Entrance Hall]]></Name>
 	<EngineVersion>6</EngineVersion>
-	<JavaPackageName><![CDATA[subway_entrace_hall]]></JavaPackageName>
+	<JavaPackageName><![CDATA[subway_entrance_hall]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
@@ -35,7 +35,7 @@
 			<SceneBackgroundColor/>
 			<SceneSkybox>null</SceneSkybox>
 			<AgentProperties>
-	 			<SpaceType>CONTINUOUS</SpaceType>			
+	 			<SpaceType>CONTINUOUS</SpaceType>
 				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
 				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
@@ -119,7 +119,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[inflowSink]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -129,7 +129,7 @@
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[goToTrains]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -152,7 +152,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[goToTrains]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -162,7 +162,7 @@
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[atFareGates]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -185,7 +185,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[atFareGates]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -195,7 +195,7 @@
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[routePassengers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -218,7 +218,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[routePassengers]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -228,7 +228,7 @@
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[inflowSource]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -251,7 +251,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[atTVM]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -261,7 +261,7 @@
 						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[routePassengers]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -286,7 +286,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[atTVM]]></ItemName>
 					</SourceEmbeddedObjectReference>
@@ -296,7 +296,7 @@
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+						<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[atFareGates]]></ItemName>
 					</TargetEmbeddedObjectReference>
@@ -1031,7 +1031,7 @@
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
-							<PackageName><![CDATA[subway_entrace_hall]]></PackageName>
+							<PackageName><![CDATA[subway_entrance_hall]]></PackageName>
 							<ClassName><![CDATA[hall_drawing.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
@@ -1203,7 +1203,7 @@
 						<Dz>0</Dz>
 						<AngleX>30</AngleX>
 						<AngleZ>0</AngleZ>
-						<SlopeType>angle</SlopeType>	
+						<SlopeType>angle</SlopeType>
 					</Slope>
 
 					<Points>
@@ -1575,7 +1575,7 @@
 						<Dz>0</Dz>
 						<AngleX>30</AngleX>
 						<AngleZ>0</AngleZ>
-						<SlopeType>angle</SlopeType>	
+						<SlopeType>angle</SlopeType>
 					</Slope>
 
 					<Points>
@@ -1866,7 +1866,7 @@
 			</Presentation>
 
 		</ActiveObjectClass>
-	</ActiveObjectClasses>	
+	</ActiveObjectClasses>
 	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
 	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
 	<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
@@ -1887,17 +1887,17 @@
 		<ExportSettings>
 		</ExportSettings>
 	</Database>
-	
+
 	<RunConfiguration ActiveObjectClassId="1625656577737">
 		<Id>1625656577752</Id>
 		<Name><![CDATA[RunConfiguration]]></Name>
 		<MaximumMemory>512</MaximumMemory>
 		<ModelTimeProperties>
 			<StopOption><![CDATA[Stop at specified time]]></StopOption>
-			<InitialDate><![CDATA[1625616000000]]></InitialDate>	
-			<InitialTime><![CDATA[0.0]]></InitialTime>	
-			<FinalDate><![CDATA[1628294400000]]></FinalDate>	
-			<FinalTime><![CDATA[100.0]]></FinalTime>	
+			<InitialDate><![CDATA[1625616000000]]></InitialDate>
+			<InitialTime><![CDATA[0.0]]></InitialTime>
+			<FinalDate><![CDATA[1628294400000]]></FinalDate>
+			<FinalTime><![CDATA[100.0]]></FinalTime>
 		</ModelTimeProperties>
 		<AnimationProperties>
 			<StopNever>true</StopNever>
@@ -1907,12 +1907,12 @@
 			<EnableDeveloperPanel>false</EnableDeveloperPanel>
 			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
 		</AnimationProperties>
-		<Inputs>		
+		<Inputs>
 		</Inputs>
 		<Outputs>
 		</Outputs>
 	</RunConfiguration>
-	<Experiments>	
+	<Experiments>
 		<!--   =========   Simulation Experiment   ========  -->
 		<SimulationExperiment ActiveObjectClassId="1625656577737">
 			<Id>1625656577750</Id>
@@ -1941,7 +1941,7 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-12490271</Color>
-					<Text><![CDATA[Subway Entrace Hall]]></Text>
+					<Text><![CDATA[Subway Entrance Hall]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>24</Size>
@@ -1951,25 +1951,25 @@
 				</Text>
 			</Presentation>
 
-			<Parameters>			
-			</Parameters>			
+			<Parameters>
+			</Parameters>
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
-				<Title><![CDATA[Subway Entrace Hall : Simulation]]></Title>	
+				<Title><![CDATA[Subway Entrance Hall : Simulation]]></Title>
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
 				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
 				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Never]]></StopOption>
-				<InitialDate><![CDATA[1625616000000]]></InitialDate>	
-				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1628294400000]]></FinalDate>	
-				<FinalTime><![CDATA[100.0]]></FinalTime>	
+				<InitialDate><![CDATA[1625616000000]]></InitialDate>
+				<InitialTime><![CDATA[0.0]]></InitialTime>
+				<FinalDate><![CDATA[1628294400000]]></FinalDate>
+				<FinalTime><![CDATA[100.0]]></FinalTime>
 			</ModelTimeProperties>
 			<BypassInitialScreen>true</BypassInitialScreen>
-		</SimulationExperiment>	
+		</SimulationExperiment>
 	</Experiments>
 	<ModelResources>
 		<Resource>
