@@ -21,7 +21,7 @@ subplot25_k5.pie(k_5, labels=nombres, autopct="%0.1f %%")
 subplot25_k5.axis('equal')
 subplot25_k5.set_title('Tamaño de cola = 5')
 
-#ventana25.savefig('images/denegacion_tasa25.0.png')
+
 
 #-------------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ subplot50_k10.pie(k_10, labels=['P.','Rechazados'], autopct="%0.1f %%")
 subplot50_k10.axis("equal")
 subplot50_k10.set_title('Tamaño de cola = 10')
 
-#ventana50.savefig('images/denegacion_tasa50.0.png')
+
 
 #-------------------------------------------------------------------------------
 nombres=['P.','R.']
@@ -86,7 +86,7 @@ subplot75_k50.pie(k_50, labels=nombres, autopct="%0.1f %%")
 subplot75_k50.axis("equal")
 subplot75_k50.set_title('Tamaño de cola = 50')
 
-#ventana75.savefig('images/denegacion_tasa75.0.png')
+
 
 #-------------------------------------------------------------------------------
 
@@ -121,7 +121,7 @@ subplot100_k50.pie(k_50, labels=nombres, autopct="%0.1f %%")
 subplot100_k50.axis("equal")
 subplot100_k50.set_title('Tamaño cola = 50')
 
-#ventana100.savefig('images/denegacion_tasa100.0.png')
+
 
 #-------------------------------------------------------------------------------
 
