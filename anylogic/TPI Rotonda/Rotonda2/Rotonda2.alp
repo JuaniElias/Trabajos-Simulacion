@@ -15,7 +15,7 @@
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1629757068503</Id>
-			<Name><![CDATA[Rotonda1]]></Name>
+			<Name><![CDATA[RotondaActual]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<Generic>false</Generic>
 			<GenericParameter>

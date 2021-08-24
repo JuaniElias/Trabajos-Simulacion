@@ -15,7 +15,7 @@
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1629724002861</Id>
-			<Name><![CDATA[Rotonda1]]></Name>
+			<Name><![CDATA[RotondaLoops]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<Generic>false</Generic>
 			<GenericParameter>
@@ -120,7 +120,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_VT]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -130,7 +130,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[selectOutput5]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -153,7 +153,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[carSource]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -163,7 +163,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[selectOutput5]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -186,7 +186,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[selectOutput5]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -196,7 +196,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_forward]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -219,7 +219,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_R8NO]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -229,7 +229,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[PuenteNO]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -252,7 +252,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[Ruta8_NO]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -262,7 +262,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[PuenteNO]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -285,7 +285,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_R8NO]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -295,7 +295,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[selectOutput5]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -318,7 +318,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_VT1]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -328,7 +328,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_VT]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -351,7 +351,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_VT1]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -361,7 +361,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[carDispose]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -384,7 +384,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[Ruta8_NO]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -394,7 +394,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[carDispose]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -417,7 +417,7 @@
 					<ShowLabel>false</ShowLabel>
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[R33_forward]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
@@ -427,7 +427,7 @@
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[rotonda_8_33]]></PackageName>
-						<ClassName><![CDATA[Rotonda1]]></ClassName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
 						<ItemName><![CDATA[carDispose]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
