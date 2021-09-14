@@ -2228,7 +2228,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[weight]]></Name>
+											<Name><![CDATA[peso]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -2920,7 +2920,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[weight]]></Name>
+											<Name><![CDATA[peso]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -3549,7 +3549,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[weight]]></Name>
+											<Name><![CDATA[peso]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -4178,7 +4178,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[weight]]></Name>
+											<Name><![CDATA[peso]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -12051,7 +12051,7 @@
 			<Variables>
 				<Variable Class="Parameter">
 					<Id>1630280014052</Id>
-					<Name><![CDATA[weight]]></Name>
+					<Name><![CDATA[peso]]></Name>
 					<X>50</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
