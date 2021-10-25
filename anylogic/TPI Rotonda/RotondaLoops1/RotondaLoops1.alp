@@ -94,21 +94,716 @@
 			<ScaleRuler>
 				<Id>1629724002857</Id>
 				<Name><![CDATA[scale]]></Name>
-				<X>70055.533</X><Y>-58918</Y>
+				<X>1380</X><Y>-780</Y>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>false</PresentationFlag>
 				<ShowLabel>false</ShowLabel>
 				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-				<Length>7650</Length>
-				<Rotation>335.3</Rotation>
+				<Length>102</Length>
+				<Rotation>0</Rotation>
 				<ScaleType>BASED_ON_LENGTH</ScaleType>
-				<ModelLength>7500</ModelLength>
+				<ModelLength>100</ModelLength>
 				<LengthUnits>METER</LengthUnits>
 				<Scale>10</Scale>
 				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 			</ScaleRuler>
 			<CurrentLevel>1629724002860</CurrentLevel>
 			<ConnectionsId>1629724002856</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1635114862901</Id>
+					<Name><![CDATA[TMA]]></Name>
+					<X>440</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115380620</Id>
+					<Name><![CDATA[C2]]></Name>
+					<X>520</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115406034</Id>
+					<Name><![CDATA[C3]]></Name>
+					<X>580</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115416479</Id>
+					<Name><![CDATA[C2S2]]></Name>
+					<X>640</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115497357</Id>
+					<Name><![CDATA[TMA_m]]></Name>
+					<X>440</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115871358</Id>
+					<Name><![CDATA[C2_m]]></Name>
+					<X>520</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115886345</Id>
+					<Name><![CDATA[C3_m]]></Name>
+					<X>580</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635115886348</Id>
+					<Name><![CDATA[C2S2_m]]></Name>
+					<X>640</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116208079</Id>
+					<Name><![CDATA[C2_60]]></Name>
+					<X>520</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116208081</Id>
+					<Name><![CDATA[C2_105]]></Name>
+					<X>520</X><Y>2580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116275158</Id>
+					<Name><![CDATA[C3_60]]></Name>
+					<X>580</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116275160</Id>
+					<Name><![CDATA[C3_180]]></Name>
+					<X>580</X><Y>2580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116311993</Id>
+					<Name><![CDATA[C2S2_60]]></Name>
+					<X>640</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116311995</Id>
+					<Name><![CDATA[C2S2_180]]></Name>
+					<X>640</X><Y>2600</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635116321529</Id>
+					<Name><![CDATA[C2S2_105]]></Name>
+					<X>640</X><Y>2580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635117110592</Id>
+					<Name><![CDATA[CRE_60]]></Name>
+					<X>720</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635117110594</Id>
+					<Name><![CDATA[CRE_105]]></Name>
+					<X>800</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635117110596</Id>
+					<Name><![CDATA[CRE_180]]></Name>
+					<X>880</X><Y>2560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123088496</Id>
+					<Name><![CDATA[P_F]]></Name>
+					<X>1040</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123092095</Id>
+					<Name><![CDATA[P_E]]></Name>
+					<X>1040</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123267703</Id>
+					<Name><![CDATA[P_F1]]></Name>
+					<X>1090</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123270730</Id>
+					<Name><![CDATA[P_F2]]></Name>
+					<X>1140</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123276860</Id>
+					<Name><![CDATA[P_F3]]></Name>
+					<X>1190</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123276862</Id>
+					<Name><![CDATA[P_F4]]></Name>
+					<X>1240</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123276864</Id>
+					<Name><![CDATA[P_F5]]></Name>
+					<X>1290</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289267</Id>
+					<Name><![CDATA[P_F6]]></Name>
+					<X>1340</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289269</Id>
+					<Name><![CDATA[P_F7]]></Name>
+					<X>1390</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289271</Id>
+					<Name><![CDATA[P_F8]]></Name>
+					<X>1440</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289273</Id>
+					<Name><![CDATA[P_F9]]></Name>
+					<X>1490</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289275</Id>
+					<Name><![CDATA[P_F10]]></Name>
+					<X>1540</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123289277</Id>
+					<Name><![CDATA[P_F11]]></Name>
+					<X>1600</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123294436</Id>
+					<Name><![CDATA[P_E1]]></Name>
+					<X>1090</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123301820</Id>
+					<Name><![CDATA[P_E2]]></Name>
+					<X>1140</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123310222</Id>
+					<Name><![CDATA[P_E3]]></Name>
+					<X>1190</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123310224</Id>
+					<Name><![CDATA[P_E4]]></Name>
+					<X>1240</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123310226</Id>
+					<Name><![CDATA[P_E5]]></Name>
+					<X>1290</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316303</Id>
+					<Name><![CDATA[P_E6]]></Name>
+					<X>1340</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316305</Id>
+					<Name><![CDATA[P_E7]]></Name>
+					<X>1390</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316307</Id>
+					<Name><![CDATA[P_E8]]></Name>
+					<X>1440</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316310</Id>
+					<Name><![CDATA[P_E9]]></Name>
+					<X>1490</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316312</Id>
+					<Name><![CDATA[P_E10]]></Name>
+					<X>1540</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123316314</Id>
+					<Name><![CDATA[P_E11]]></Name>
+					<X>1600</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635123466966</Id>
+					<Name><![CDATA[i]]></Name>
+					<X>940</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635124424597</Id>
+					<Name><![CDATA[P_F12]]></Name>
+					<X>1660</X><Y>2550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1635124424599</Id>
+					<Name><![CDATA[P_E12]]></Name>
+					<X>1660</X><Y>2570</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1635115687380</Id>
+					<Name><![CDATA[FR]]></Name>
+					<X>720</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.7]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1635115687378</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1635115707470</Id>
+					<Name><![CDATA[FS]]></Name>
+					<X>780</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[1.1]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1635115707468</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1635116026002</Id>
+					<Name><![CDATA[Crecimiento]]></Name>
+					<X>840</X><Y>2500</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1635116026000</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1635117483095</Id>
+					<Name><![CDATA[Erosion]]></Name>
+					<X>720</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1635117483093</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1635117504164</Id>
+					<Name><![CDATA[Fatiga]]></Name>
+					<X>840</X><Y>2520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1635117504162</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1635123206318</Id>
+					<Name><![CDATA[P_Erosion]]></Name>
+					<X>640</X><Y>2630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[Double]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ P_E, P_E1, P_E2, P_E3, P_E4, P_E5, P_E6, P_E7, P_E8, P_E9, P_E10, P_E11, P_E12 }]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+				<Variable Class="CollectionVariable">
+					<Id>1635123382988</Id>
+					<Name><![CDATA[P_Fatiga]]></Name>
+					<X>640</X><Y>2660</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
+						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
+						<ElementClass><![CDATA[Double]]></ElementClass>
+						<ValueElementClass><![CDATA[String]]></ValueElementClass>
+						<CollectionInitializer Class="CodeValue">
+							<Code><![CDATA[{ P_F, P_F1, P_F2, P_F3, P_F4, P_F5, P_F6, P_F7, P_F8, P_F9, P_F10, P_F11, P_F12 }]]></Code>
+						</CollectionInitializer>
+					</Properties>
+
+				</Variable>
+			</Variables>
 			<Connectors>
 				<Connector>
 					<Id>1630339067614</Id>
@@ -273,39 +968,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>300</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1630339067624</Id>
-					<Name><![CDATA[connector1]]></Name>
-					<X>330</X><Y>720</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo20]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>380</X><Y>-20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -738,39 +1400,6 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1634072678667</Id>
-					<Name><![CDATA[connector71]]></Name>
-					<X>330</X><Y>1550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo35]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose5]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>430</X><Y>-20</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1634072678669</Id>
 					<Name><![CDATA[connector72]]></Name>
 					<X>250</X><Y>1530</Y>
@@ -834,39 +1463,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>280</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072678673</Id>
-					<Name><![CDATA[connector74]]></Name>
-					<X>490</X><Y>1590</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose5]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>270</X><Y>-60</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -1197,39 +1793,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>360</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072688560</Id>
-					<Name><![CDATA[connector90]]></Name>
-					<X>329.667</X><Y>1769.667</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo42]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose6]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>450</X><Y>-20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -1626,39 +2189,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>300</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072807273</Id>
-					<Name><![CDATA[connector124]]></Name>
-					<X>330</X><Y>910</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo56]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose8]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>390</X><Y>-20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -2091,72 +2621,6 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1634072807309</Id>
-					<Name><![CDATA[connector142]]></Name>
-					<X>330</X><Y>1130</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo63]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose9]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>430</X><Y>-20</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072807311</Id>
-					<Name><![CDATA[connector143]]></Name>
-					<X>250</X><Y>1110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo62]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose9]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>510</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1634072807313</Id>
 					<Name><![CDATA[connector144]]></Name>
 					<X>169</X><Y>1170</Y>
@@ -2517,72 +2981,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-211</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072807343</Id>
-					<Name><![CDATA[connector159]]></Name>
-					<X>420</X><Y>1370</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo71]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose10]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>340</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072807345</Id>
-					<Name><![CDATA[connector160]]></Name>
-					<X>330</X><Y>1350</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo70]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose10]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>430</X><Y>-20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -3015,39 +3413,6 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1634073045253</Id>
-					<Name><![CDATA[connector20]]></Name>
-					<X>340</X><Y>1970</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo77]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose3]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>440</X><Y>-20</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1634073045255</Id>
 					<Name><![CDATA[connector21]]></Name>
 					<X>260</X><Y>1950</Y>
@@ -3279,39 +3644,6 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1634073045273</Id>
-					<Name><![CDATA[connector178]]></Name>
-					<X>720</X><Y>2070</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo14]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose3]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>-120</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
 					<Id>1634073128666</Id>
 					<Name><![CDATA[connector180]]></Name>
 					<X>160</X><Y>2180</Y>
@@ -3474,39 +3806,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>350</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634073128676</Id>
-					<Name><![CDATA[connector31]]></Name>
-					<X>350</X><Y>2200</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo80]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose4]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>430</X><Y>-20</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -4269,72 +4568,6 @@
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>370</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634075888574</Id>
-					<Name><![CDATA[connector43]]></Name>
-					<X>630</X><Y>2280</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo83]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose4]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>150</X><Y>-100</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1634072688576</Id>
-					<Name><![CDATA[connector98]]></Name>
-					<X>549.667</X><Y>1829.667</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carMoveTo45]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarMoveTo]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[rotonda]]></PackageName>
-						<ClassName><![CDATA[RotondaLoops]]></ClassName>
-						<ItemName><![CDATA[carDispose6]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
-						<ClassName><![CDATA[CarDispose]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>230</X><Y>-80</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -5153,12 +5386,624 @@
 						<Point><X>90</X><Y>-100</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1635122237301</Id>
+					<Name><![CDATA[connector1]]></Name>
+					<X>330</X><Y>720</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo20]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose1]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>370</X><Y>-20</Y></Point>
+						<Point><X>380</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122262291</Id>
+					<Name><![CDATA[connector20]]></Name>
+					<X>330</X><Y>910</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo56]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose8]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>390</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122266759</Id>
+					<Name><![CDATA[connector31]]></Name>
+					<X>330</X><Y>1130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo63]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose9]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>430</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122270177</Id>
+					<Name><![CDATA[connector43]]></Name>
+					<X>250</X><Y>1110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo62]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose9]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>510</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122276181</Id>
+					<Name><![CDATA[connector71]]></Name>
+					<X>420</X><Y>1370</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo71]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose10]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>340</X><Y>-40</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122279421</Id>
+					<Name><![CDATA[connector74]]></Name>
+					<X>330</X><Y>1350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo70]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose10]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>430</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122284580</Id>
+					<Name><![CDATA[connector84]]></Name>
+					<X>330</X><Y>1550</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo35]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose5]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>430</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122288568</Id>
+					<Name><![CDATA[connector90]]></Name>
+					<X>330</X><Y>1770</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo42]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose6]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>450</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122291433</Id>
+					<Name><![CDATA[connector95]]></Name>
+					<X>550</X><Y>1830</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo45]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose6]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>230</X><Y>-80</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122297591</Id>
+					<Name><![CDATA[connector96]]></Name>
+					<X>340</X><Y>1970</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo77]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>440</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122303244</Id>
+					<Name><![CDATA[connector98]]></Name>
+					<X>720</X><Y>2070</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo14]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose3]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>-120</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122308236</Id>
+					<Name><![CDATA[connector101]]></Name>
+					<X>350</X><Y>2200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo80]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>430</X><Y>-20</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122316430</Id>
+					<Name><![CDATA[connector102]]></Name>
+					<X>630</X><Y>2280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo83]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose4]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>150</X><Y>-100</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1635122932675</Id>
+					<Name><![CDATA[connector103]]></Name>
+					<X>490</X><Y>1590</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carMoveTo1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarMoveTo]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[rotonda]]></PackageName>
+						<ClassName><![CDATA[RotondaLoops]]></ClassName>
+						<ItemName><![CDATA[carDispose5]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.road]]></PackageName>
+						<ClassName><![CDATA[CarDispose]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>270</X><Y>-60</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
+			<Events>
+				<Event>
+					<Id>1635115606870</Id>
+					<Name><![CDATA[Censo_m]]></Name>
+					<X>720</X><Y>2600</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="cyclic">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1635148800000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[30]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[30]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[C2_60 = 1*FR*FS*Crecimiento*30*C2_m;
+C2_105 = 1*FR*FS*Crecimiento*30*C2_m;
+C3_60 = 1*FR*FS*Crecimiento*30*C3_m;
+C3_180 = 1*FR*FS*Crecimiento*30*C3_m;
+C2S2_60 = 1*FR*FS*Crecimiento*30*C2S2_m;
+C2S2_105 = 1*FR*FS*Crecimiento*30*C2S2_m;
+C2S2_180 = 1*FR*FS*Crecimiento*30*C2S2_m;
+C2_m = 0;
+C3_m = 0;
+C2S2_m = 0;
+TMA_m = 0;
+Cant_Rep_Esp.restart(0.00001);]]></Action>
+				</Event>
+				<Event>
+					<Id>1635117162773</Id>
+					<Name><![CDATA[Cant_Rep_Esp]]></Name>
+					<X>870</X><Y>2600</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1635148800000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[CRE_60  = C2_60 + C3_60 + C2S2_60;
+CRE_105 = C2_105 + C2S2_105;
+CRE_180 = C3_180 + C2S2_180;
+Calc_agotamiento.restart(0.00001);]]></Action>
+				</Event>
+				<Event>
+					<Id>1635117523288</Id>
+					<Name><![CDATA[Calc_agotamiento]]></Name>
+					<X>870</X><Y>2630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1635148800000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[P_Erosion.set(i, CRE_105/Erosion + CRE_180/Erosion);
+P_Fatiga.set(i, CRE_105/Fatiga);
+i += 1;]]></Action>
+				</Event>
+				<Event>
+					<Id>1635124112173</Id>
+					<Name><![CDATA[Censo_a]]></Name>
+					<X>720</X><Y>2630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>false</OccurrenceAtTime>
+						<OccurrenceDate>1661212800000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[C2_60 = 1*FR*FS*Crecimiento*365*C2;
+C2_105 = 1*FR*FS*Crecimiento*365*C2;
+C3_60 = 1*FR*FS*Crecimiento*365*C3;
+C3_180 = 1*FR*FS*Crecimiento*365*C3;
+C2S2_60 = 1*FR*FS*Crecimiento*365*C2S2;
+C2S2_105 = 1*FR*FS*Crecimiento*365*C2S2;
+C2S2_180 = 1*FR*FS*Crecimiento*365*C2S2;
+Cant_Rep_Esp.restart(0.00001);]]></Action>
+				</Event>
+			</Events>
 			<AnalysisData>
     			<HistogramData>
 					<Id>1634079663118</Id>
 					<Name><![CDATA[c_tim]]></Name>
-					<X>200</X><Y>2600</Y>
+					<X>-260</X><Y>2600</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5189,7 +6034,7 @@
     			<HistogramData>
 					<Id>1634080526682</Id>
 					<Name><![CDATA[t1_tim]]></Name>
-					<X>200</X><Y>2620</Y>
+					<X>-260</X><Y>2620</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -5431,7 +6276,7 @@
 					<Id>1630339067479</Id>
 					<Name><![CDATA[src_car_RN33_NE]]></Name>
 					<X>40</X><Y>700</Y>
-					<Label><X>-22.333</X><Y>31</Y></Label>
+					<Label><X>-25</X><Y>20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -5524,9 +6369,6 @@
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
-										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
 										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
@@ -6729,9 +7571,6 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
 									</Parameters>
@@ -7932,9 +8771,6 @@
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
-										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
 										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
@@ -9140,9 +9976,6 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
 									</Parameters>
@@ -10347,9 +11180,6 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
 									</Parameters>
@@ -11550,9 +12380,6 @@
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
-										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
 										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
@@ -12755,9 +13582,6 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
 									</Parameters>
@@ -13959,9 +14783,6 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
 										</Parameter>
 									</Parameters>
@@ -15005,7 +15826,7 @@
 				<EmbeddedObject>
 					<Id>1634079363642</Id>
 					<Name><![CDATA[cars]]></Name>
-					<X>80</X><Y>2600</Y>
+					<X>-80</X><Y>2500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15023,9 +15844,6 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
-						<Parameter>
-							<Name><![CDATA[peso]]></Name>
-						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tiempo_ini]]></Name>
 						</Parameter>
@@ -15073,7 +15891,7 @@
 				<EmbeddedObject>
 					<Id>1634079435091</Id>
 					<Name><![CDATA[trucks]]></Name>
-					<X>80</X><Y>2620</Y>
+					<X>-80</X><Y>2520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15091,24 +15909,6 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
-						<Parameter>
-							<Name><![CDATA[peso]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rodado_simple]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[randomTrue(0.5)]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[cant_ejes]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[superficie]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[presion]]></Name>
-						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tiempo_ini]]></Name>
 						</Parameter>
@@ -15156,7 +15956,7 @@
 				<EmbeddedObject>
 					<Id>1634079452304</Id>
 					<Name><![CDATA[truck2s]]></Name>
-					<X>80</X><Y>2640</Y>
+					<X>-80</X><Y>2540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15174,21 +15974,6 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
-						<Parameter>
-							<Name><![CDATA[peso]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rodado_simple]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[cant_ejes]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[superficie]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[presion]]></Name>
-						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tiempo_ini]]></Name>
 						</Parameter>
@@ -15236,7 +16021,7 @@
 				<EmbeddedObject>
 					<Id>1634079467325</Id>
 					<Name><![CDATA[truck3s]]></Name>
-					<X>80</X><Y>2660</Y>
+					<X>-80</X><Y>2560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -15254,21 +16039,6 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
-						<Parameter>
-							<Name><![CDATA[peso]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rodado_simple]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[cant_ejes]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[superficie]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[presion]]></Name>
-						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tiempo_ini]]></Name>
 						</Parameter>
@@ -15317,7 +16087,7 @@
 					<Id>1635049101355</Id>
 					<Name><![CDATA[src_truck_RN33_NE]]></Name>
 					<X>40</X><Y>740</Y>
-					<Label><X>-22.333</X><Y>31</Y></Label>
+					<Label><X>-35</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -15411,22 +16181,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -15643,22 +16398,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -15875,22 +16615,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -16110,22 +16835,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -16345,22 +17055,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -16580,22 +17275,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -16812,22 +17492,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -17044,22 +17709,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -17276,22 +17926,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -17508,22 +18143,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -17740,22 +18360,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -17972,22 +18577,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -18204,22 +18794,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -18436,22 +19011,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -18668,22 +19228,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -18900,22 +19445,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -19132,22 +19662,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -19364,22 +19879,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -19596,22 +20096,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -19828,22 +20313,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -20060,22 +20530,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -20292,22 +20747,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -20524,22 +20964,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -20756,22 +21181,7 @@
 									</GenericParameterSubstitute>
 									<Parameters>
 										<Parameter>
-											<Name><![CDATA[peso]]></Name>
-										</Parameter>
-										<Parameter>
 											<Name><![CDATA[tiempo_ini]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[rodado_simple]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[cant_ejes]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[superficie]]></Name>
-										</Parameter>
-										<Parameter>
-											<Name><![CDATA[presion]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -21189,7 +21599,7 @@
 				<LaneConnector SourceId="1631651130053" TargetId="1634072249464">
 					<Id>1634072286923</Id>
 					<Name><![CDATA[laneConnector62]]></Name>
-					<X>14293.949509818744</X><Y>-8384.240401453091</Y>
+					<X>14293.94951806489</X><Y>-8384.240601542726</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -21198,14 +21608,14 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>21.87249018125658</X><Y>7.869401453091996</Y></Point>
-						<Point><X>-0.4112126223917585</X><Y>9.991541631759901</Y></Point>
-						<Point><X>-11.866637627235832</X><Y>21.211188081348155</Y></Point>
-						<Point><X>-3.5671883409540897</X><Y>15.63273475229289</Y></Point>
-						<Point><X>-11.866637627235832</X><Y>21.211188081348155</Y></Point>
-						<Point><X>-12.736771576452156</X><Y>21.79604636028671</Y></Point>
-						<Point><X>-12.736771576452156</X><Y>21.79604636028671</Y></Point>
-						<Point><X>21.87249018125658</X><Y>7.869401453091996</Y></Point>
+						<Point><X>21.872481935110045</X><Y>7.869601542726741</Y></Point>
+						<Point><X>-0.4123335727308586</X><Y>9.991495434858734</Y></Point>
+						<Point><X>-11.869316113296009</X><Y>21.213182965819215</Y></Point>
+						<Point><X>-3.569866827014266</X><Y>15.63472963676395</Y></Point>
+						<Point><X>-11.869316113296009</X><Y>21.213182965819215</Y></Point>
+						<Point><X>-12.736779822598692</X><Y>21.796246449921455</Y></Point>
+						<Point><X>-12.736779822598692</X><Y>21.796246449921455</Y></Point>
+						<Point><X>21.872481935110045</X><Y>7.869601542726741</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
@@ -23636,7 +24046,7 @@
 				<LaneConnector SourceId="1631726852670" TargetId="1631727236074">
 					<Id>1631727236518</Id>
 					<Name><![CDATA[laneConnector117]]></Name>
-					<X>44331.27012801569</X><Y>-33178.72993870506</Y>
+					<X>44331.270148530086</X><Y>-33178.72978072472</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -23645,14 +24055,14 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-8.263128015692928</X><Y>-4.502061294944724</Y></Point>
+						<Point><X>-8.263148530088074</X><Y>-4.502219275280368</Y></Point>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.014897586253937334</X><Y>-0.11468549753772095</Y></Point>
-						<Point><X>-0.014897586253937334</X><Y>-0.11468549753772095</Y></Point>
-						<Point><X>-1.3030696034402354</X><Y>-10.031369058793643</Y></Point>
-						<Point><X>2.4798929181997664</X><Y>-6.476069711883611</Y></Point>
-						<Point><X>-5.206205481481447</X><Y>-0.07889131898991764</Y></Point>
-						<Point><X>-8.263128015692928</X><Y>-4.502061294944724</Y></Point>
+						<Point><X>-0.014991719275712967</X><Y>-0.1154908440366853</Y></Point>
+						<Point><X>-0.014991719275712967</X><Y>-0.1154908440366853</Y></Point>
+						<Point><X>-1.302278692550317</X><Y>-10.032289331880747</Y></Point>
+						<Point><X>2.4798724038046203</X><Y>-6.476227692219254</Y></Point>
+						<Point><X>-5.2062259958765935</X><Y>-0.07904929932556115</Y></Point>
+						<Point><X>-8.263148530088074</X><Y>-4.502219275280368</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
@@ -23768,7 +24178,7 @@
 				<LaneConnector SourceId="1631726852670" TargetId="1631727236074">
 					<Id>1634086976213</Id>
 					<Name><![CDATA[laneConnector161]]></Name>
-					<X>44331.27012801569</X><Y>-33178.72993870506</Y>
+					<X>44331.270148530086</X><Y>-33178.72978072472</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -23777,14 +24187,14 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-8.263128015692928</X><Y>-4.502061294944724</Y></Point>
+						<Point><X>-8.263148530088074</X><Y>-4.502219275280368</Y></Point>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.8508849408026435</X><Y>-6.5503338004418765</Y></Point>
-						<Point><X>-0.8508849408026435</X><Y>-6.5503338004418765</Y></Point>
-						<Point><X>-2.1390569579889416</X><Y>-16.4670173616978</Y></Point>
-						<Point><X>0.19610023193672532</X><Y>-9.22000684057275</Y></Point>
-						<Point><X>-7.4899981677444885</X><Y>-2.8228284476790577</Y></Point>
-						<Point><X>-8.263128015692928</X><Y>-4.502061294944724</Y></Point>
+						<Point><X>-0.8504929877672112</X><Y>-6.551893827963795</Y></Point>
+						<Point><X>-0.8504929877672112</X><Y>-6.551893827963795</Y></Point>
+						<Point><X>-2.137779961041815</X><Y>-16.46869231580058</Y></Point>
+						<Point><X>0.19607971754157916</X><Y>-9.220164820908394</Y></Point>
+						<Point><X>-7.490018682139635</X><Y>-2.8229864280147012</Y></Point>
+						<Point><X>-8.263148530088074</X><Y>-4.502219275280368</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>1</TargetLane>
@@ -25214,7 +25624,7 @@
 				<LaneConnector SourceId="1631726852676" TargetId="1631727236074">
 					<Id>1631727237884</Id>
 					<Name><![CDATA[laneConnector150]]></Name>
-					<X>44839.63437846416</X><Y>-33627.76230820069</Y>
+					<X>44839.63123789256</X><Y>-33627.74021991434</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25223,14 +25633,14 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0.759621535842598</X><Y>13.906308200690546</Y></Point>
-						<Point><X>-1.4695137294038432</X><Y>9.891437175610918</Y></Point>
-						<Point><X>-7.997583060787292</X><Y>14.228382998073357</Y></Point>
-						<Point><X>-0.3114846611133544</X><Y>7.831204605179664</Y></Point>
-						<Point><X>-7.997583060787292</X><Y>14.228382998073357</Y></Point>
-						<Point><X>-9.982970978031517</X><Y>15.880831356822455</Y></Point>
-						<Point><X>-9.982970978031517</X><Y>15.880831356822455</Y></Point>
-						<Point><X>0.759621535842598</X><Y>13.906308200690546</Y></Point>
+						<Point><X>0.7627621074425406</X><Y>13.884219914340065</Y></Point>
+						<Point><X>-1.3457698282945785</X><Y>9.909031414281344</Y></Point>
+						<Point><X>-7.761231819844397</X><Y>14.012192297559523</Y></Point>
+						<Point><X>-0.07513342017045943</X><Y>7.61501390466583</Y></Point>
+						<Point><X>-7.761231819844397</X><Y>14.012192297559523</Y></Point>
+						<Point><X>-9.979830406431574</X><Y>15.858743070471974</Y></Point>
+						<Point><X>-9.979830406431574</X><Y>15.858743070471974</Y></Point>
+						<Point><X>0.7627621074425406</X><Y>13.884219914340065</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
@@ -25412,7 +25822,7 @@
 				<LaneConnector SourceId="1631726852676" TargetId="1631727236074">
 					<Id>1634086998101</Id>
 					<Name><![CDATA[laneConnector165]]></Name>
-					<X>44839.63437846416</X><Y>-33627.76230820069</Y>
+					<X>44839.63123789256</X><Y>-33627.74021991434</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -25421,14 +25831,14 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0.759621535842598</X><Y>13.906308200690546</Y></Point>
+						<Point><X>0.7627621074425406</X><Y>13.884219914340065</Y></Point>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-0.9950046475642012</X><Y>6.697471254534321</Y></Point>
-						<Point><X>-0.9950046475642012</X><Y>6.697471254534321</Y></Point>
-						<Point><X>-2.4645183769680443</X><Y>16.588908430152514</Y></Point>
-						<Point><X>-7.699178291768476</X><Y>18.62476848550432</Y></Point>
-						<Point><X>-0.013079892094538081</X><Y>12.227590092610626</Y></Point>
-						<Point><X>0.759621535842598</X><Y>13.906308200690546</Y></Point>
+						<Point><X>-0.8471491678137681</X><Y>6.237640003506385</Y></Point>
+						<Point><X>-0.8471491678137681</X><Y>6.237640003506385</Y></Point>
+						<Point><X>-2.1929189961083466</X><Y>16.14667141778773</Y></Point>
+						<Point><X>-7.696037720168533</X><Y>18.602680199153838</Y></Point>
+						<Point><X>-0.00993932049459545</X><Y>12.205501806260145</Y></Point>
+						<Point><X>0.7627621074425406</X><Y>13.884219914340065</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>1</TargetLane>
@@ -26166,7 +26576,7 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>7.613844619485008</X><Y>-40.07050780075531</Y></Point>
+						<Point><X>7.613844619485008</X><Y>-40.07050780075525</Y></Point>
 						<Point><X>4.088990687652313</X><Y>-13.0458274320344</Y></Point>
 						<Point><X>6.0078330098676815</X><Y>-26.66487145642509</Y></Point>
 						<Point><X>4.101057025505725</X><Y>-13.085130335003328</Y></Point>
@@ -26176,7 +26586,7 @@
 						<Point><X>9.842541032736335</X><Y>-53.97502359482513</Y></Point>
 						<Point><X>12.90882007297023</X><Y>-67.12822670141787</Y></Point>
 						<Point><X>8.270105038284782</X><Y>-54.26759759327871</Y></Point>
-						<Point><X>7.613844619485008</X><Y>-40.07050780075531</Y></Point>
+						<Point><X>7.613844619485008</X><Y>-40.07050780075525</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
@@ -26415,7 +26825,7 @@
 					<Z>0</Z>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>1.4956252206375211</X><Y>-0.9740582665028761</Y></Point>
+						<Point><X>1.4956252206375211</X><Y>-0.9740582665028743</Y></Point>
 						<Point><X>4.070162063149837</X><Y>6.243796664934276</Y></Point>
 						<Point><X>8.218262965467602</X><Y>12.436353302546198</Y></Point>
 						<Point><X>4.069817420553591</X><Y>6.244331488382048</Y></Point>
@@ -26425,7 +26835,7 @@
 						<Point><X>16.51907763897998</X><Y>24.82625332105818</Y></Point>
 						<Point><X>20.35172025691554</X><Y>31.21839013975515</Y></Point>
 						<Point><X>16.51932767857943</X><Y>24.825895858266648</Y></Point>
-						<Point><X>1.4956252206375211</X><Y>-0.9740582665028761</Y></Point>
+						<Point><X>1.4956252206375211</X><Y>-0.9740582665028743</Y></Point>
 					</Points>
 					<SourceLane>0</SourceLane>
 					<TargetLane>0</TargetLane>
@@ -26445,9 +26855,9 @@
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-21.917686602032973</X><Y>-30.357293386933932</Y></Point>
 						<Point><X>-5.141895018130981</X><Y>-8.576766035197632</Y></Point>
-						<Point><X>-0.035564661687203625</X><Y>-0.05711568439979153</Y></Point>
+						<Point><X>-0.035564661687203625</X><Y>-0.05711568439978976</Y></Point>
 						<Point><X>5.4253440546590355</X><Y>8.320143771516241</Y></Point>
-						<Point><X>-0.035564661687203625</X><Y>-0.05711568439979153</Y></Point>
+						<Point><X>-0.035564661687203625</X><Y>-0.05711568439978976</Y></Point>
 						<Point><X>-20.42294410571958</X><Y>-31.33227803001798</Y></Point>
 						<Point><X>-20.42294410571958</X><Y>-31.33227803001798</Y></Point>
 						<Point><X>-21.917686602032973</X><Y>-30.357293386933932</Y></Point>
@@ -26820,7 +27230,7 @@
 						<Point><X>37.4566526923868</X><Y>-24.578408578262724</Y></Point>
 						<Point><X>37.4566526923868</X><Y>-24.578408578262724</Y></Point>
 						<Point><X>24.980561832347576</X><Y>-16.37135025085263</Y></Point>
-						<Point><X>49.93265086096653</X><Y>-32.785405931107675</Y></Point>
+						<Point><X>49.93265086096653</X><Y>-32.78540593110773</Y></Point>
 						<Point><X>62.43784716086839</X><Y>-40.94790022756598</Y></Point>
 						<Point><X>49.93254259868536</X><Y>-32.78542698397956</Y></Point>
 						<Point><X>30.243496540931574</X><Y>-21.96893338793336</Y></Point>
@@ -29161,7 +29571,7 @@
     			<Histogram>
 					<Id>1634079781367</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>60</X><Y>2680</Y>
+					<X>0</X><Y>2480</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29179,15 +29589,15 @@
 						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>440</Width>
-					<Height>220</Height>
+					<Width>410</Width>
+					<Height>150</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
-						<XOffset>50</XOffset>
-						<YOffset>30</YOffset>
-						<Width>360</Width>
-						<Height>120</Height>
+						<XOffset>40</XOffset>
+						<YOffset>10</YOffset>
+						<Width>350</Width>
+						<Height>100</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -29195,7 +29605,7 @@
 					<Legend>
 						<Place>SOUTH</Place>
 						<TextColor>-16777216</TextColor>
-						<Size>40</Size>
+						<Size>20</Size>
 					</Legend>
 					<Labels>
 						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
@@ -29218,7 +29628,7 @@
 						<ColorHighPercent>-12799119</ColorHighPercent>
 						<ColorMean>-6632142</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Tiempo en Modelo]]></Title>							
+						<Title><![CDATA[Tiempo en Modelo Autos]]></Title>							
 					</HistogramDataExpression>
 					<HistogramDataExpression>
 					<Expression><![CDATA[t1_tim]]></Expression>
@@ -29228,7 +29638,7 @@
 						<ColorHighPercent>-9807155</ColorHighPercent>
 						<ColorMean>-14774017</ColorMean>
 						<LineWidth>1</LineWidth>						
-						<Title><![CDATA[Histogram Data Title]]></Title>							
+						<Title><![CDATA[Tiempo en Modelo Camiones]]></Title>							
 					</HistogramDataExpression>
     			</Histogram>
 				<Control Type="Button">
@@ -29441,7 +29851,7 @@
 				<Text>
 					<Id>1634088373184</Id>
 					<Name><![CDATA[text4]]></Name>
-					<X>710</X><Y>15</Y>
+					<X>670</X><Y>15</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29529,7 +29939,7 @@
 				<Text>
 					<Id>1634088448639</Id>
 					<Name><![CDATA[text8]]></Name>
-					<X>720</X><Y>615</Y>
+					<X>680</X><Y>615</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29639,7 +30049,7 @@
 				<Text>
 					<Id>1634088975620</Id>
 					<Name><![CDATA[text10]]></Name>
-					<X>720</X><Y>2435</Y>
+					<X>680</X><Y>2435</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29680,13 +30090,328 @@
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+    			<BarChart>
+					<Id>1635123051524</Id>
+					<Name><![CDATA[chart1]]></Name>
+					<X>0</X><Y>2630</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1635148800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>580</Width>
+					<Height>190</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>40</XOffset>
+						<YOffset>20</YOffset>
+						<Width>510</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>40</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Expression><![CDATA[P_E]]></Expression>
+					<Color>-4343957</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E1]]></Expression>
+					<Color>-12004916</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item1]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E2]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item2]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E3]]></Expression>
+					<Color>-60269</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item3]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E4]]></Expression>
+					<Color>-29696</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item4]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E5]]></Expression>
+					<Color>-12799119</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item5]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E6]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item6]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E7]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item7]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E8]]></Expression>
+					<Color>-2448096</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item8]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E9]]></Expression>
+					<Color>-9728477</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item9]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E10]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item10]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E11]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item11]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+    			</BarChart>
+    			<BarChart>
+					<Id>1635124013905</Id>
+					<Name><![CDATA[chart2]]></Name>
+					<X>0</X><Y>2830</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1635148800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>580</Width>
+					<Height>190</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>40</XOffset>
+						<YOffset>20</YOffset>
+						<Width>510</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>40</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Expression><![CDATA[P_F]]></Expression>
+					<Color>-4343957</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F1]]></Expression>
+					<Color>-12004916</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item1]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F2]]></Expression>
+					<Color>-8097537</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item2]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F3]]></Expression>
+					<Color>-60269</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item3]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F4]]></Expression>
+					<Color>-29696</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item4]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F5]]></Expression>
+					<Color>-12799119</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item5]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F6]]></Expression>
+					<Color>-9807155</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item6]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F7]]></Expression>
+					<Color>-2987746</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item7]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F8]]></Expression>
+					<Color>-2448096</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item8]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F9]]></Expression>
+					<Color>-9728477</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item9]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F10]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item10]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_F11]]></Expression>
+					<Color>-4565549</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item11]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+    			</BarChart>
+    			<BarChart>
+					<Id>1635124256563</Id>
+					<Name><![CDATA[chart3]]></Name>
+					<X>640</X><Y>2720</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1635148800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>260</Width>
+					<Height>210</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>180</Width>
+						<Height>120</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<DataItem>
+					<Expression><![CDATA[P_F12]]></Expression>
+					<Color>-13447886</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item]]></Title>
+					</DataItem>
+					<DataItem>
+					<Expression><![CDATA[P_E12]]></Expression>
+					<Color>-9404272</Color>
+					<Expression2Flag>true</Expression2Flag>
+						<Title><![CDATA[item1]]></Title>
+					</DataItem>
+					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
+					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
+					<ScaleType>AUTO</ScaleType>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+    			</BarChart>
 			</Presentation>
 
 				</Level>
 				<EmbeddedObjectPresentation>
 					<Id>1634079363643</Id>
 					<Name><![CDATA[cars_presentation]]></Name>
-					<X>143</X><Y>2600</Y>
+					<X>-130</X><Y>2500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29705,7 +30430,7 @@
 				<EmbeddedObjectPresentation>
 					<Id>1634079435092</Id>
 					<Name><![CDATA[trucks_presentation]]></Name>
-					<X>151</X><Y>2619</Y>
+					<X>-122</X><Y>2519</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29724,7 +30449,7 @@
 				<EmbeddedObjectPresentation>
 					<Id>1634079452305</Id>
 					<Name><![CDATA[truck2s_presentation]]></Name>
-					<X>155</X><Y>2640</Y>
+					<X>-118</X><Y>2540</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29743,7 +30468,7 @@
 				<EmbeddedObjectPresentation>
 					<Id>1634079467326</Id>
 					<Name><![CDATA[truck3s_presentation]]></Name>
-					<X>154</X><Y>2660</Y>
+					<X>-140</X><Y>2560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -29841,7 +30566,8 @@
 			<Id>1630280013933</Id>
 			<Name><![CDATA[Car]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.c_tim.add(time()-tiempo_ini);]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.c_tim.add(time()-tiempo_ini);
+rotondaLoops.TMA += 1; ]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1630280013931</Id>
@@ -29935,30 +30661,6 @@
 			<CurrentLevel>1630280013932</CurrentLevel>
 			<ConnectionsId>1630280013928</ConnectionsId>
 			<Variables>
-				<Variable Class="Parameter">
-					<Id>1630280014052</Id>
-					<Name><![CDATA[peso]]></Name>
-					<X>50</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[normal(75, 1300)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>0</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1634079188482</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
@@ -30089,7 +30791,10 @@
 			<Id>1630280822734</Id>
 			<Name><![CDATA[Truck]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
+rotondaLoops.TMA += 1; 
+rotondaLoops.C2 += 1;
+rotondaLoops.C2_m += 1; ]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1630280822732</Id>
@@ -30183,127 +30888,6 @@
 			<CurrentLevel>1630280822733</CurrentLevel>
 			<ConnectionsId>1630280822729</ConnectionsId>
 			<Variables>
-				<Variable Class="Parameter">
-					<Id>1630280822824</Id>
-					<Name><![CDATA[peso]]></Name>
-					<X>50</X><Y>50</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[uniform(5000, 9999)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>0</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1630282514558</Id>
-					<Name><![CDATA[rodado_simple]]></Name>
-					<X>50</X><Y>90</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[boolean]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[true]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1630282514556</Id>
-							<EditorContolType>CHECK_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1630285010411</Id>
-					<Name><![CDATA[cant_ejes]]></Name>
-					<X>50</X><Y>70</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1630285010409</Id>
-							<Label><![CDATA[cant_ejes]]></Label>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1630285923433</Id>
-					<Name><![CDATA[superficie]]></Name>
-					<X>50</X><Y>110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[sqrt(peso / presion * Math.PI)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1630285923431</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1630285993266</Id>
-					<Name><![CDATA[presion]]></Name>
-					<X>50</X><Y>130</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[weibull(2, 60, 520)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1630285993264</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1634079626214</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
@@ -30418,6 +31002,27 @@
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
+				<Text>
+					<Id>1635114368722</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>40</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C2 - Camión de 2 ejes]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Presentation>
 
 				</Level>
@@ -30429,7 +31034,10 @@
 			<Id>1634078509194</Id>
 			<Name><![CDATA[Truck2]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
+rotondaLoops.TMA += 1; 
+rotondaLoops.C3 += 1; 
+rotondaLoops.C3_m += 1;]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1634078509192</Id>
@@ -30523,127 +31131,6 @@
 			<CurrentLevel>1634078509193</CurrentLevel>
 			<ConnectionsId>1634078509189</ConnectionsId>
 			<Variables>
-				<Variable Class="Parameter">
-					<Id>1634078552686</Id>
-					<Name><![CDATA[peso]]></Name>
-					<X>60</X><Y>80</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[uniform(10000, 1799)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078552684</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078552692</Id>
-					<Name><![CDATA[rodado_simple]]></Name>
-					<X>60</X><Y>120</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[boolean]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078552690</Id>
-							<EditorContolType>CHECK_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078552699</Id>
-					<Name><![CDATA[cant_ejes]]></Name>
-					<X>60</X><Y>100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078552697</Id>
-							<Label><![CDATA[cant_ejes]]></Label>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078552705</Id>
-					<Name><![CDATA[superficie]]></Name>
-					<X>60</X><Y>140</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[sqrt(peso / presion * Math.PI)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078552703</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078552711</Id>
-					<Name><![CDATA[presion]]></Name>
-					<X>60</X><Y>160</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[weibull(2, 60, 520)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078552709</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1634079630672</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
@@ -30840,6 +31327,27 @@
 			</Presentation>
 
 				</Group>
+				<Text>
+					<Id>1635114389079</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>60</X><Y>40</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C3 - Camión de 3 ejes]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Presentation>
 
 				</Level>
@@ -30851,7 +31359,10 @@
 			<Id>1634078711349</Id>
 			<Name><![CDATA[Truck3]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
+rotondaLoops.TMA += 1; 
+rotondaLoops.C2S2 += 1; 
+rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1634078711347</Id>
@@ -30945,127 +31456,6 @@
 			<CurrentLevel>1634078711348</CurrentLevel>
 			<ConnectionsId>1634078711344</ConnectionsId>
 			<Variables>
-				<Variable Class="Parameter">
-					<Id>1634078717875</Id>
-					<Name><![CDATA[peso]]></Name>
-					<X>70</X><Y>90</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[uniform(18000, 25000)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078717873</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078717884</Id>
-					<Name><![CDATA[rodado_simple]]></Name>
-					<X>70</X><Y>130</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[boolean]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078717882</Id>
-							<EditorContolType>CHECK_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078717890</Id>
-					<Name><![CDATA[cant_ejes]]></Name>
-					<X>70</X><Y>110</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[3]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078717888</Id>
-							<Label><![CDATA[cant_ejes]]></Label>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078717896</Id>
-					<Name><![CDATA[superficie]]></Name>
-					<X>70</X><Y>150</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[sqrt(peso / presion * Math.PI)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078717894</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
-					<Id>1634078717903</Id>
-					<Name><![CDATA[presion]]></Name>
-					<X>70</X><Y>170</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[double]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[weibull(2, 60, 520)]]></Code>
-						</DefaultValue>
-						<ParameterEditor>
-							<Id>1634078717901</Id>
-							<EditorContolType>TEXT_BOX</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
 				<Variable Class="Parameter">
 					<Id>1634079634736</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
@@ -31262,6 +31652,27 @@
 			</Presentation>
 
 				</Group>
+				<Text>
+					<Id>1635114630699</Id>
+					<Name><![CDATA[C2S2]]></Name>
+					<X>70</X><Y>60</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[C2S2 - Camión con 2 ejes con un semi remolque de 2 ejes]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>10</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Presentation>
 
 				</Level>
@@ -31293,17 +31704,17 @@
 	<RunConfiguration ActiveObjectClassId="1629724002861">
 		<Id>1629724002872</Id>
 		<Name><![CDATA[RunConfiguration]]></Name>
-		<MaximumMemory>512</MaximumMemory>
+		<MaximumMemory>8192</MaximumMemory>
 		<ModelTimeProperties>
-			<StopOption><![CDATA[Stop at specified time]]></StopOption>
+			<StopOption><![CDATA[Stop at specified date]]></StopOption>
 			<InitialDate><![CDATA[1629676800000]]></InitialDate>	
 			<InitialTime><![CDATA[0.0]]></InitialTime>	
-			<FinalDate><![CDATA[1632355200000]]></FinalDate>	
-			<FinalTime><![CDATA[100.0]]></FinalTime>	
+			<FinalDate><![CDATA[1661212800000]]></FinalDate>	
+			<FinalTime><![CDATA[365.0]]></FinalTime>	
 		</ModelTimeProperties>
 		<AnimationProperties>
 			<StopNever>true</StopNever>
-			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<ExecutionMode>virtualTime</ExecutionMode>
 			<RealTimeScale>1.0</RealTimeScale>
 			<EnableZoomAndPanning>true</EnableZoomAndPanning>
 			<EnableDeveloperPanel>false</EnableDeveloperPanel>
@@ -31354,6 +31765,21 @@
 			</Presentation>
 
 			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[FR]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[FS]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Crecimiento]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Erosion]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[Fatiga]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>false</EnableZoomAndPanning>

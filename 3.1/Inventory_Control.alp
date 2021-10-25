@@ -4,7 +4,7 @@
 	         AnyLogic Project File 
 *************************************************	         
 -->
-<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.7.7.202109242252" AlpVersion="8.7.2">
+<AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.5.2.202001241823" AlpVersion="8.5.1">
 <Model>
 	<Id>1621345740632</Id>
 	<Name><![CDATA[Inventory_Control]]></Name>
@@ -675,7 +675,6 @@ OrderingCosts += SetupCost + i * Order;
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
 						<Title><![CDATA[Inventory Dynamics]]></Title>
-					<Id>0</Id>
 					<Expression><![CDATA[my_dataset]]></Expression>
 					<Color>-29696</Color>
 					<Expression2><![CDATA[InventoryLevel]]></Expression2>
@@ -685,7 +684,6 @@ OrderingCosts += SetupCost + i * Order;
 					</DatasetExpression>
 					<DatasetExpression>  
 						<Title><![CDATA[Re-Order point]]></Title>
-					<Id>0</Id>
 					<Expression><![CDATA[my_dataset1]]></Expression>
 					<Color>-12799119</Color>
 					<Expression2><![CDATA[s]]></Expression2>
@@ -695,7 +693,6 @@ OrderingCosts += SetupCost + i * Order;
 					</DatasetExpression>
 					<DatasetExpression>  
 						<Title><![CDATA[Zero]]></Title>
-					<Id>0</Id>
 					<Expression><![CDATA[my_dataset2]]></Expression>
 					<Color>-16777216</Color>
 					<Expression2><![CDATA[0]]></Expression2>
@@ -762,7 +759,6 @@ OrderingCosts += SetupCost + i * Order;
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
 						<Title><![CDATA[ServiceLevel]]></Title>
-					<Id>1621348811686</Id>
 					<Color>-12004916</Color>
 					<Expression2><![CDATA[ServiceLevel]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
@@ -828,7 +824,6 @@ OrderingCosts += SetupCost + i * Order;
 					<Interpolation>LINEAR</Interpolation>
 					<DatasetExpression>  
 						<Title><![CDATA[RetailShortage]]></Title>
-					<Id>1621348828493</Id>
 					<Color>-23296</Color>
 					<Expression2><![CDATA[RetailShortage]]></Expression2>
 					<Expression2Flag>true</Expression2Flag>
@@ -886,21 +881,18 @@ OrderingCosts += SetupCost + i * Order;
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<DataItem>
-					<Id>0</Id>
 					<Expression><![CDATA[HoldingCosts]]></Expression>
 					<Color>-2354116</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[Holding Costs]]></Title>
 					</DataItem>
 					<DataItem>
-					<Id>0</Id>
 					<Expression><![CDATA[OrderingCosts]]></Expression>
 					<Color>-16776961</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[Ordering Costs]]></Title>
 					</DataItem>
 					<DataItem>
-					<Id>0</Id>
 					<Expression><![CDATA[StockoutCosts]]></Expression>
 					<Color>-8355712</Color>
 					<Expression2Flag>true</Expression2Flag>
@@ -1133,14 +1125,7 @@ OrderingCosts += SetupCost + i * Order;
 				<FinalDate><![CDATA[1621299600000]]></FinalDate>	
 				<FinalTime><![CDATA[3600.0]]></FinalTime>	
 			</ModelTimeProperties>
-			<BypassInitialScreen>true</BypassInitialScreen>
 		</SimulationExperiment>	
 	</Experiments>
-    <RequiredLibraryReference>
-		<LibraryName><![CDATA[com.anylogic.libraries.modules.markup_descriptors]]></LibraryName>
-		<VersionMajor>1</VersionMajor>
-		<VersionMinor>0</VersionMinor>
-		<VersionBuild>0</VersionBuild>
-    </RequiredLibraryReference>
 </Model>
 </AnyLogicWorkspace>
