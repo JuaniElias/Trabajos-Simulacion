@@ -752,6 +752,9 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[400]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1635117483093</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
@@ -773,6 +776,9 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[250]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1635117504162</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
