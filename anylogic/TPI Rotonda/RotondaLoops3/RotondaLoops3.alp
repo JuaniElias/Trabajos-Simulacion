@@ -10,13 +10,14 @@
 	<Name><![CDATA[RotondaLoops3]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[rotonda3]]></JavaPackageName>
-	<ModelTimeUnit><![CDATA[Hour]]></ModelTimeUnit>
+	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
 			<Id>1629724002861</Id>
 			<Name><![CDATA[RotondaLoops]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
+			<StartupCode><![CDATA[chart3.setVisible(false);]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1629724002859</Id>
@@ -84,11 +85,11 @@
 					<OccurrenceDate>1629792000000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -212,7 +213,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116208079</Id>
 					<Name><![CDATA[C2_60]]></Name>
-					<X>520</X><Y>2560</Y>
+					<X>1050</X><Y>2760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -224,7 +225,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116208081</Id>
 					<Name><![CDATA[C2_105]]></Name>
-					<X>520</X><Y>2580</Y>
+					<X>1050</X><Y>2780</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -236,7 +237,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116275158</Id>
 					<Name><![CDATA[C3_60]]></Name>
-					<X>580</X><Y>2560</Y>
+					<X>1110</X><Y>2760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -248,7 +249,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116275160</Id>
 					<Name><![CDATA[C3_180]]></Name>
-					<X>580</X><Y>2580</Y>
+					<X>1110</X><Y>2780</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -260,7 +261,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116311993</Id>
 					<Name><![CDATA[C2S2_60]]></Name>
-					<X>640</X><Y>2560</Y>
+					<X>1170</X><Y>2760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -272,7 +273,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116311995</Id>
 					<Name><![CDATA[C2S2_180]]></Name>
-					<X>640</X><Y>2600</Y>
+					<X>1170</X><Y>2800</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -284,7 +285,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635116321529</Id>
 					<Name><![CDATA[C2S2_105]]></Name>
-					<X>640</X><Y>2580</Y>
+					<X>1170</X><Y>2780</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -296,7 +297,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635117110592</Id>
 					<Name><![CDATA[CRE_60]]></Name>
-					<X>720</X><Y>2560</Y>
+					<X>1260</X><Y>2760</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -308,7 +309,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635117110594</Id>
 					<Name><![CDATA[CRE_105]]></Name>
-					<X>800</X><Y>2560</Y>
+					<X>1260</X><Y>2780</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -320,7 +321,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635117110596</Id>
 					<Name><![CDATA[CRE_180]]></Name>
-					<X>880</X><Y>2560</Y>
+					<X>1260</X><Y>2800</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -332,7 +333,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635123088496</Id>
 					<Name><![CDATA[P_F]]></Name>
-					<X>1040</X><Y>2550</Y>
+					<X>1050</X><Y>2840</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -344,271 +345,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1635123092095</Id>
 					<Name><![CDATA[P_E]]></Name>
-					<X>1040</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123267703</Id>
-					<Name><![CDATA[P_F1]]></Name>
-					<X>1090</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123270730</Id>
-					<Name><![CDATA[P_F2]]></Name>
-					<X>1140</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123276860</Id>
-					<Name><![CDATA[P_F3]]></Name>
-					<X>1190</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123276862</Id>
-					<Name><![CDATA[P_F4]]></Name>
-					<X>1240</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123276864</Id>
-					<Name><![CDATA[P_F5]]></Name>
-					<X>1290</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289267</Id>
-					<Name><![CDATA[P_F6]]></Name>
-					<X>1340</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289269</Id>
-					<Name><![CDATA[P_F7]]></Name>
-					<X>1390</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289271</Id>
-					<Name><![CDATA[P_F8]]></Name>
-					<X>1440</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289273</Id>
-					<Name><![CDATA[P_F9]]></Name>
-					<X>1490</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289275</Id>
-					<Name><![CDATA[P_F10]]></Name>
-					<X>1540</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123289277</Id>
-					<Name><![CDATA[P_F11]]></Name>
-					<X>1600</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123294436</Id>
-					<Name><![CDATA[P_E1]]></Name>
-					<X>1090</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123301820</Id>
-					<Name><![CDATA[P_E2]]></Name>
-					<X>1140</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123310222</Id>
-					<Name><![CDATA[P_E3]]></Name>
-					<X>1190</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123310224</Id>
-					<Name><![CDATA[P_E4]]></Name>
-					<X>1240</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123310226</Id>
-					<Name><![CDATA[P_E5]]></Name>
-					<X>1290</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316303</Id>
-					<Name><![CDATA[P_E6]]></Name>
-					<X>1340</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316305</Id>
-					<Name><![CDATA[P_E7]]></Name>
-					<X>1390</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316307</Id>
-					<Name><![CDATA[P_E8]]></Name>
-					<X>1440</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316310</Id>
-					<Name><![CDATA[P_E9]]></Name>
-					<X>1490</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316312</Id>
-					<Name><![CDATA[P_E10]]></Name>
-					<X>1540</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635123316314</Id>
-					<Name><![CDATA[P_E11]]></Name>
-					<X>1600</X><Y>2570</Y>
+					<X>1050</X><Y>2860</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -620,8 +357,8 @@
 				<Variable Class="PlainVariable">
 					<Id>1635123466966</Id>
 					<Name><![CDATA[i]]></Name>
-					<X>940</X><Y>2500</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>1050</X><Y>2680</Y>
+					<Label><X>20</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -633,30 +370,6 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1635124424597</Id>
-					<Name><![CDATA[P_F12]]></Name>
-					<X>1660</X><Y>2550</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1635124424599</Id>
-					<Name><![CDATA[P_E12]]></Name>
-					<X>1660</X><Y>2570</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
 					<Id>1635461442318</Id>
 					<Name><![CDATA[endRoad]]></Name>
 					<X>360</X><Y>710</Y>
@@ -665,6 +378,33 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="private" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636403583822</Id>
+					<Name><![CDATA[u]]></Name>
+					<X>500</X><Y>730</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>false</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1636415023231</Id>
+					<Name><![CDATA[cont]]></Name>
+					<X>1050</X><Y>2660</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[0]]></Code>
@@ -731,6 +471,9 @@
 						<Type><![CDATA[double]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2]]></Code>
+						</DefaultValue>
 						<ParameterEditor>
 							<Id>1635116026000</Id>
 							<EditorContolType>TEXT_BOX</EditorContolType>
@@ -753,7 +496,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[400]]></Code>
+							<Code><![CDATA[400000]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1635117483093</Id>
@@ -777,7 +520,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[250]]></Code>
+							<Code><![CDATA[250000]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1635117504162</Id>
@@ -787,42 +530,6 @@
 							<DelimeterType>NO_DELIMETER</DelimeterType>
 						</ParameterEditor>
 					</Properties>                 
-				</Variable>
-				<Variable Class="CollectionVariable">
-					<Id>1635123206318</Id>
-					<Name><![CDATA[P_Erosion]]></Name>
-					<X>640</X><Y>2630</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
-						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
-						<ElementClass><![CDATA[Double]]></ElementClass>
-						<ValueElementClass><![CDATA[String]]></ValueElementClass>
-						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ P_E, P_E1, P_E2, P_E3, P_E4, P_E5, P_E6, P_E7, P_E8, P_E9, P_E10, P_E11, P_E12 }]]></Code>
-						</CollectionInitializer>
-					</Properties>
-
-				</Variable>
-				<Variable Class="CollectionVariable">
-					<Id>1635123382988</Id>
-					<Name><![CDATA[P_Fatiga]]></Name>
-					<X>640</X><Y>2660</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" AccessType="public" StaticVariable="false">
-						<CollectionClass><![CDATA[ArrayList]]></CollectionClass>
-						<ElementClass><![CDATA[Double]]></ElementClass>
-						<ValueElementClass><![CDATA[String]]></ValueElementClass>
-						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ P_F, P_F1, P_F2, P_F3, P_F4, P_F5, P_F6, P_F7, P_F8, P_F9, P_F10, P_F11, P_F12 }]]></Code>
-						</CollectionInitializer>
-					</Properties>
-
 				</Variable>
 				<Variable Class="CollectionVariable">
 					<Id>1635461442314</Id>
@@ -837,7 +544,7 @@
 						<ElementClass><![CDATA[Road]]></ElementClass>
 						<ValueElementClass><![CDATA[String]]></ValueElementClass>
 						<CollectionInitializer Class="CodeValue">
-							<Code><![CDATA[{ RN8_SE, RN8_NO, RN33_SO, RP94_NO, RP94_SE, RP93_NO, RP93_SE, RN33_NE }]]></Code>
+							<Code><![CDATA[{ RN33_SO, RN33_NE, RN8_NO, RN8_SE, RP94_NO, RP94_SE, RP93_NO, RP93_SE }]]></Code>
 						</CollectionInitializer>
 					</Properties>
 
@@ -2183,7 +1890,7 @@
 				<Event>
 					<Id>1635115606870</Id>
 					<Name><![CDATA[Censo_m]]></Name>
-					<X>720</X><Y>2600</Y>
+					<X>1050</X><Y>2600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2200,32 +1907,33 @@
 						<OccurrenceAtTime>true</OccurrenceAtTime>
 						<OccurrenceDate>1635148800000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[30]]></Code>
+							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
-							<Code><![CDATA[30]]></Code>
+							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[C2_60 = 1*FR*FS*Crecimiento*30*C2_m;
-C2_105 = 1*FR*FS*Crecimiento*30*C2_m;
-C3_60 = 1*FR*FS*Crecimiento*30*C3_m;
-C3_180 = 1*FR*FS*Crecimiento*30*C3_m;
-C2S2_60 = 1*FR*FS*Crecimiento*30*C2S2_m;
-C2S2_105 = 1*FR*FS*Crecimiento*30*C2S2_m;
-C2S2_180 = 1*FR*FS*Crecimiento*30*C2S2_m;
-C2_m = 0;
-C3_m = 0;
-C2S2_m = 0;
-TMA_m = 0;
-Cant_Rep_Esp.restart(0.00001);]]></Action>
+					<Action><![CDATA[if (cont < 30){
+	C2_60 = 1*FR*FS*Crecimiento*1*C2_m;
+	C2_105 = 1*FR*FS*Crecimiento*1*C2_m;
+	C3_60 = 1*FR*FS*Crecimiento*1*C3_m;
+	C3_180 = 1*FR*FS*Crecimiento*1*C3_m;
+	C2S2_60 = 1*FR*FS*Crecimiento*1*C2S2_m;
+	C2S2_105 = 1*FR*FS*Crecimiento*1*C2S2_m;
+	C2S2_180 = 1*FR*FS*Crecimiento*1*C2S2_m;
+	Cant_Rep_Esp.restart(0.00001);
+	cont += 1;
+}
+
+]]></Action>
 				</Event>
 				<Event>
 					<Id>1635117162773</Id>
 					<Name><![CDATA[Cant_Rep_Esp]]></Name>
-					<X>870</X><Y>2600</Y>
+					<X>1200</X><Y>2600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2259,7 +1967,7 @@ Calc_agotamiento.restart(0.00001);]]></Action>
 				<Event>
 					<Id>1635117523288</Id>
 					<Name><![CDATA[Calc_agotamiento]]></Name>
-					<X>870</X><Y>2630</Y>
+					<X>1200</X><Y>2630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2285,14 +1993,18 @@ Calc_agotamiento.restart(0.00001);]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[P_Erosion.set(i, CRE_105/Erosion + CRE_180/Erosion);
-P_Fatiga.set(i, CRE_105/Fatiga);
-i += 1;]]></Action>
+					<Action><![CDATA[P_E = (CRE_105 + CRE_180)/Erosion;
+P_F = CRE_105/Fatiga;
+i += 1;
+C2_m = 0;
+C3_m = 0;
+C2S2_m = 0;
+TMA_m = 0;]]></Action>
 				</Event>
 				<Event>
 					<Id>1635124112173</Id>
 					<Name><![CDATA[Censo_a]]></Name>
-					<X>720</X><Y>2630</Y>
+					<X>1050</X><Y>2630</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2307,9 +2019,48 @@ i += 1;]]></Action>
 							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
 						</Rate>
 						<OccurrenceAtTime>false</OccurrenceAtTime>
-						<OccurrenceDate>1661212800000</OccurrenceDate>
+						<OccurrenceDate>1632355200000</OccurrenceDate>
 						<OccurrenceTime Class="CodeUnitValue">
-							<Code><![CDATA[0]]></Code>
+							<Code><![CDATA[2]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+						</OccurrenceTime>
+						<RecurrenceCode Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</RecurrenceCode>
+						<Condition><![CDATA[false]]></Condition>
+					</Properties>
+					<Action><![CDATA[C2_60 = 1*FR*FS*Crecimiento*C2;
+C2_105 = 1*FR*FS*Crecimiento*C2;
+C3_60 = 1*FR*FS*Crecimiento*C3;
+C3_180 = 1*FR*FS*Crecimiento*C3;
+C2S2_60 = 1*FR*FS*Crecimiento*C2S2;
+C2S2_105 = 1*FR*FS*Crecimiento*C2S2;
+C2S2_180 = 1*FR*FS*Crecimiento*C2S2;
+Cant_Rep_Esp.restart(0.00001);
+chart3.setVisible(true);]]></Action>
+				</Event>
+				<Event>
+					<Id>1636410183341</Id>
+					<Name><![CDATA[dou]]></Name>
+					<X>1050</X><Y>2710</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TriggerType="timeout" Mode="occuresOnce">
+						<Timeout Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						</Timeout>
+						<Rate Class="CodeUnitValue">
+							<Code><![CDATA[1]]></Code>
+							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+						</Rate>
+						<OccurrenceAtTime>true</OccurrenceAtTime>
+						<OccurrenceDate>1636444800000</OccurrenceDate>
+						<OccurrenceTime Class="CodeUnitValue">
+							<Code><![CDATA[0.5]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
 						</OccurrenceTime>
 						<RecurrenceCode Class="CodeUnitValue">
@@ -2318,14 +2069,7 @@ i += 1;]]></Action>
 						</RecurrenceCode>
 						<Condition><![CDATA[false]]></Condition>
 					</Properties>
-					<Action><![CDATA[C2_60 = 1*FR*FS*Crecimiento*365*C2;
-C2_105 = 1*FR*FS*Crecimiento*365*C2;
-C3_60 = 1*FR*FS*Crecimiento*365*C3;
-C3_180 = 1*FR*FS*Crecimiento*365*C3;
-C2S2_60 = 1*FR*FS*Crecimiento*365*C2S2;
-C2S2_105 = 1*FR*FS*Crecimiento*365*C2S2;
-C2S2_180 = 1*FR*FS*Crecimiento*365*C2S2;
-Cant_Rep_Esp.restart(0.00001);]]></Action>
+					<Action><![CDATA[i = 0;]]></Action>
 				</Event>
 			</Events>
 			<Functions>
@@ -2343,11 +2087,45 @@ Cant_Rep_Esp.restart(0.00001);]]></Action>
 						<Name><![CDATA[initRoad]]></Name>
 						<Type><![CDATA[int]]></Type>
 					</Parameter>
-					<Body><![CDATA[do
-endRoad = uniform_discr(0, 7);
-while(initRoad == endRoad);
-
-]]></Body>
+					<Parameter>
+						<Name><![CDATA[t]]></Name>
+						<Type><![CDATA[int]]></Type>
+					</Parameter>
+					<Body><![CDATA[do{
+u = uniform(0, 1);
+if (u <= 0.32){endRoad = 0;}
+else if(u <= 0.64){endRoad = 1;}
+else if(u <= 0.70){endRoad = 2;}
+else if(u <= 0.76){endRoad = 3;}
+else if(u <= 0.82){endRoad = 4;}
+else if(u <= 0.88){endRoad = 5;}
+else if(u <= 0.94){endRoad = 6;}
+else{endRoad = 7;}
+}
+while( initRoad == endRoad );
+if (endRoad <= 1)
+	if (t == 0){
+		TMA += 1;
+		TMA_m += 1;
+	}
+	else if (t==1){
+		TMA += 1;
+		TMA_m += 1; 
+		C2 += 1;
+		C2_m += 1; 
+	}
+	else if (t==2){
+		TMA += 1; 
+		TMA_m += 1;
+		C3 += 1; 
+		C3_m += 1;
+	}
+	else {
+		TMA += 1; 
+		TMA_m += 1;
+		C2S2 += 1; 
+		C2S2_m += 1; 
+	}	]]></Body>
 				</Function>
 			</Functions>
 			<AnalysisData>
@@ -3677,7 +3455,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[1190]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -3828,7 +3606,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(7);]]></Code>
+								<Code><![CDATA[selectNextRoad(1,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -3897,7 +3675,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[250*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -4048,7 +3826,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(4);]]></Code>
+								<Code><![CDATA[selectNextRoad(5,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4117,7 +3895,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[270*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -4268,7 +4046,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(3);]]></Code>
+								<Code><![CDATA[selectNextRoad(4,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4337,7 +4115,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2010/2]]></Code>
+								<Code><![CDATA[690]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -4488,7 +4266,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(2);]]></Code>
+								<Code><![CDATA[selectNextRoad(0,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4557,7 +4335,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[5560/2]]></Code>
+								<Code><![CDATA[261*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -4708,7 +4486,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(0);]]></Code>
+								<Code><![CDATA[selectNextRoad(3,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4777,7 +4555,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3432/2]]></Code>
+								<Code><![CDATA[205*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -4928,7 +4706,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(1);]]></Code>
+								<Code><![CDATA[selectNextRoad(2,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -4997,7 +4775,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[300*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -5148,7 +4926,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(6);]]></Code>
+								<Code><![CDATA[selectNextRoad(7,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -5217,7 +4995,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[236*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -5368,7 +5146,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(5);]]></Code>
+								<Code><![CDATA[selectNextRoad(6,0);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -5437,7 +5215,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[130*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -5588,7 +5366,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(7);]]></Code>
+								<Code><![CDATA[selectNextRoad(1,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -5657,7 +5435,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[700*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -5808,7 +5586,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(7);]]></Code>
+								<Code><![CDATA[selectNextRoad(1,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -5877,7 +5655,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[570*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -6028,7 +5806,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(7);]]></Code>
+								<Code><![CDATA[selectNextRoad(1,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -6097,7 +5875,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[87*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -6248,7 +6026,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(2);]]></Code>
+								<Code><![CDATA[selectNextRoad(0,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -6317,7 +6095,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[264*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -6468,7 +6246,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(2);]]></Code>
+								<Code><![CDATA[selectNextRoad(0,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -6537,7 +6315,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2106/2]]></Code>
+								<Code><![CDATA[222*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -6688,7 +6466,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(2);]]></Code>
+								<Code><![CDATA[selectNextRoad(0,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -6757,7 +6535,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[5560/2]]></Code>
+								<Code><![CDATA[52*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -6908,7 +6686,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(0);]]></Code>
+								<Code><![CDATA[selectNextRoad(3,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -6977,7 +6755,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[5560/2]]></Code>
+								<Code><![CDATA[33*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -7128,7 +6906,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(0);]]></Code>
+								<Code><![CDATA[selectNextRoad(3,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -7197,7 +6975,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[5560/2]]></Code>
+								<Code><![CDATA[26*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -7348,7 +7126,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(0);]]></Code>
+								<Code><![CDATA[selectNextRoad(3,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -7417,7 +7195,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3432/2]]></Code>
+								<Code><![CDATA[41*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -7568,7 +7346,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(1);]]></Code>
+								<Code><![CDATA[selectNextRoad(2,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -7637,7 +7415,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3432/2]]></Code>
+								<Code><![CDATA[26*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -7788,7 +7566,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(1);]]></Code>
+								<Code><![CDATA[selectNextRoad(2,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -7857,7 +7635,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[3432/2]]></Code>
+								<Code><![CDATA[17*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -8008,7 +7786,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(1);]]></Code>
+								<Code><![CDATA[selectNextRoad(2,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -8077,7 +7855,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[50*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -8228,7 +8006,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(4);]]></Code>
+								<Code><![CDATA[selectNextRoad(5,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -8297,7 +8075,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[35*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -8448,7 +8226,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(4);]]></Code>
+								<Code><![CDATA[selectNextRoad(5,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -8517,7 +8295,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[21*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -8668,7 +8446,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(4);]]></Code>
+								<Code><![CDATA[selectNextRoad(5,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -8737,7 +8515,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[45*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -8888,7 +8666,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(3);]]></Code>
+								<Code><![CDATA[selectNextRoad(4,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -8957,7 +8735,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[20*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -9108,7 +8886,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(3);]]></Code>
+								<Code><![CDATA[selectNextRoad(4,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -9177,7 +8955,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[30*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -9328,7 +9106,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(3);]]></Code>
+								<Code><![CDATA[selectNextRoad(4,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -9397,7 +9175,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[41*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -9548,7 +9326,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(6);]]></Code>
+								<Code><![CDATA[selectNextRoad(7,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -9617,7 +9395,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[15*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -9768,7 +9546,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(6);]]></Code>
+								<Code><![CDATA[selectNextRoad(7,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -9837,7 +9615,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[18*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -9988,7 +9766,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(6);]]></Code>
+								<Code><![CDATA[selectNextRoad(7,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -10057,7 +9835,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[28*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -10208,7 +9986,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(5);]]></Code>
+								<Code><![CDATA[selectNextRoad(6,1);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -10277,7 +10055,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[21*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -10428,7 +10206,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(5);]]></Code>
+								<Code><![CDATA[selectNextRoad(6,3);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -10497,7 +10275,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[1000]]></Code>
+								<Code><![CDATA[21*2]]></Code>
 								<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
 							</Value>
 						</Parameter>
@@ -10648,7 +10426,7 @@ while(initRoad == endRoad);
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[selectNextRoad(5);]]></Code>
+								<Code><![CDATA[selectNextRoad(6,2);]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
@@ -19239,28 +19017,6 @@ while(initRoad == endRoad);
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
-				<Text>
-					<Id>1634088373184</Id>
-					<Name><![CDATA[text4]]></Name>
-					<X>670</X><Y>15</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-1</Color>
-					<Text><![CDATA[Date]]></Text>
-					<TextCode><![CDATA[date()]]></TextCode>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>24</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
 				<Rectangle>
 					<Id>1634088448629</Id>
 					<Name><![CDATA[rectangle2]]></Name>
@@ -19320,28 +19076,6 @@ while(initRoad == endRoad);
 					<Rotation>0.0</Rotation>
 					<Color>-1</Color>
 					<Text><![CDATA[Modelo 3D]]></Text>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>24</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
-					<Id>1634088448639</Id>
-					<Name><![CDATA[text8]]></Name>
-					<X>680</X><Y>615</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-1</Color>
-					<Text><![CDATA[Date]]></Text>
-					<TextCode><![CDATA[date()]]></TextCode>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>24</Size>
@@ -19438,28 +19172,6 @@ while(initRoad == endRoad);
 					<Alignment>LEFT</Alignment>
 				</Text>
 				<Text>
-					<Id>1634088975620</Id>
-					<Name><![CDATA[text10]]></Name>
-					<X>680</X><Y>2435</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D</DrawMode>
-					<EmbeddedIcon>false</EmbeddedIcon>
-					<Z>0</Z>
-					<Rotation>0.0</Rotation>
-					<Color>-1</Color>
-					<Text><![CDATA[Date]]></Text>
-					<TextCode><![CDATA[date()]]></TextCode>
-					<Font>
-						<Name>SansSerif</Name>
-						<Size>24</Size>
-						<Style>0</Style>
-					</Font>
-					<Alignment>LEFT</Alignment>
-				</Text>
-				<Text>
 					<Id>1634088975627</Id>
 					<Name><![CDATA[text11]]></Name>
 					<X>225</X><Y>2435</Y>
@@ -19484,7 +19196,8 @@ while(initRoad == endRoad);
     			<BarChart>
 					<Id>1635123051524</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>0</X><Y>2630</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>-640</X><Y>2640</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -19527,13 +19240,13 @@ while(initRoad == endRoad);
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<DataItem>
-					<Expression><![CDATA[P_E]]></Expression>
+					<Expression><![CDATA[P_Erosion.get(0)]]></Expression>
 					<Color>-4343957</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[item]]></Title>
 					</DataItem>
 					<DataItem>
-					<Expression><![CDATA[P_E1]]></Expression>
+					<Expression><![CDATA[P_Erosion.get(1)]]></Expression>
 					<Color>-12004916</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[item1]]></Title>
@@ -19609,7 +19322,8 @@ while(initRoad == endRoad);
     			<BarChart>
 					<Id>1635124013905</Id>
 					<Name><![CDATA[chart2]]></Name>
-					<X>0</X><Y>2830</Y>
+					<ExcludeFromBuild>true</ExcludeFromBuild>
+					<X>-600</X><Y>2840</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -19734,7 +19448,7 @@ while(initRoad == endRoad);
     			<BarChart>
 					<Id>1635124256563</Id>
 					<Name><![CDATA[chart3]]></Name>
-					<X>640</X><Y>2720</Y>
+					<X>420</X><Y>2540</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -19777,16 +19491,16 @@ while(initRoad == endRoad);
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<DataItem>
-					<Expression><![CDATA[P_F12]]></Expression>
-					<Color>-13447886</Color>
+					<Expression><![CDATA[P_F]]></Expression>
+					<Color>-16728065</Color>
 					<Expression2Flag>true</Expression2Flag>
-						<Title><![CDATA[item]]></Title>
+						<Title><![CDATA[Fatiga]]></Title>
 					</DataItem>
 					<DataItem>
-					<Expression><![CDATA[P_E12]]></Expression>
-					<Color>-9404272</Color>
+					<Expression><![CDATA[P_E]]></Expression>
+					<Color>-23296</Color>
 					<Expression2Flag>true</Expression2Flag>
-						<Title><![CDATA[item1]]></Title>
+						<Title><![CDATA[Erosión]]></Title>
 					</DataItem>
 					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
 					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
@@ -19796,6 +19510,81 @@ while(initRoad == endRoad);
 						<RelativeWidth>0.8</RelativeWidth>
 					</Bars>
     			</BarChart>
+    			<Plot>
+					<Id>1636412078955</Id>
+					<Name><![CDATA[plot]]></Name>
+					<X>0</X><Y>2720</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1636444800000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[1.01]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1.01]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>1000</Width>
+					<Height>290</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>920</Width>
+						<Height>200</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<ShowLegend>true</ShowLegend>
+					<VerScaleFromExpression><![CDATA[0]]></VerScaleFromExpression>
+					<VerScaleToExpression><![CDATA[1]]></VerScaleToExpression>
+					<VerScaleType>AUTO</VerScaleType>
+					<DrawLine>true</DrawLine>
+					<Interpolation>LINEAR</Interpolation>
+					<DatasetExpression>  
+						<Title><![CDATA[Erosion]]></Title>
+					<Expression><![CDATA[P_Erosion]]></Expression>
+					<Color>-23296</Color>
+					<Expression2><![CDATA[P_E]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>2.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[i]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<DatasetExpression>  
+						<Title><![CDATA[Fatiga]]></Title>
+					<Expression><![CDATA[my_dataset]]></Expression>
+					<Color>-16728065</Color>
+					<Expression2><![CDATA[P_F]]></Expression2>
+					<Expression2Flag>true</Expression2Flag>
+						<PointStyle>CIRCLE</PointStyle>
+						<LineWidth>2.0</LineWidth>
+						<HorizontalAxisExpression><![CDATA[i]]></HorizontalAxisExpression>
+					</DatasetExpression>
+					<SamplesToKeep>100</SamplesToKeep>
+					<HorScaleFromExpression><![CDATA[0]]></HorScaleFromExpression>
+					<HorScaleToExpression><![CDATA[1]]></HorScaleToExpression>
+					<HorScaleType>AUTO</HorScaleType>
+    			</Plot>
 			</Presentation>
 
 				</Level>
@@ -19957,8 +19746,7 @@ while(initRoad == endRoad);
 			<Id>1630280013933</Id>
 			<Name><![CDATA[Car]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.c_tim.add(time()-tiempo_ini);
-rotondaLoops.TMA += 1; ]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.c_tim.add(time()-tiempo_ini);]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1630280013931</Id>
@@ -20026,11 +19814,11 @@ rotondaLoops.TMA += 1; ]]></DestroyCode>
 					<OccurrenceDate>1630310400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -20182,10 +19970,7 @@ rotondaLoops.TMA += 1; ]]></DestroyCode>
 			<Id>1630280822734</Id>
 			<Name><![CDATA[Truck]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
-rotondaLoops.TMA += 1; 
-rotondaLoops.C2 += 1;
-rotondaLoops.C2_m += 1; ]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1630280822732</Id>
@@ -20253,11 +20038,11 @@ rotondaLoops.C2_m += 1; ]]></DestroyCode>
 					<OccurrenceDate>1630310400000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -20425,10 +20210,7 @@ rotondaLoops.C2_m += 1; ]]></DestroyCode>
 			<Id>1634078509194</Id>
 			<Name><![CDATA[Truck2]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
-rotondaLoops.TMA += 1; 
-rotondaLoops.C3 += 1; 
-rotondaLoops.C3_m += 1;]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1634078509192</Id>
@@ -20496,11 +20278,11 @@ rotondaLoops.C3_m += 1;]]></DestroyCode>
 					<OccurrenceDate>1634112000000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -20525,7 +20307,7 @@ rotondaLoops.C3_m += 1;]]></DestroyCode>
 				<Variable Class="Parameter">
 					<Id>1634079630672</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
-					<X>60</X><Y>180</Y>
+					<X>70</X><Y>70</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -20750,10 +20532,7 @@ rotondaLoops.C3_m += 1;]]></DestroyCode>
 			<Id>1634078711349</Id>
 			<Name><![CDATA[Truck3]]></Name>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
-			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);
-rotondaLoops.TMA += 1; 
-rotondaLoops.C2S2 += 1; 
-rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
+			<DestroyCode><![CDATA[rotondaLoops.t1_tim.add(time()-tiempo_ini);]]></DestroyCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1634078711347</Id>
@@ -20821,11 +20600,11 @@ rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
 					<OccurrenceDate>1634112000000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[HOUR]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -20850,7 +20629,7 @@ rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
 				<Variable Class="Parameter">
 					<Id>1634079634736</Id>
 					<Name><![CDATA[tiempo_ini]]></Name>
-					<X>70</X><Y>190</Y>
+					<X>70</X><Y>90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -21174,7 +20953,7 @@ rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>false</EnableZoomAndPanning>
-				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
+				<ExecutionMode><![CDATA[virtualTime]]></ExecutionMode>
 				<Title><![CDATA[RotondaLoops : Simulation]]></Title>	
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
 				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
@@ -21184,8 +20963,8 @@ rotondaLoops.C2S2_m += 1; ]]></DestroyCode>
 				<StopOption><![CDATA[Stop at specified date]]></StopOption>
 				<InitialDate><![CDATA[1629676800000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1661212800000]]></FinalDate>	
-				<FinalTime><![CDATA[8760.0]]></FinalTime>	
+				<FinalDate><![CDATA[1632358800000]]></FinalDate>	
+				<FinalTime><![CDATA[44700.0]]></FinalTime>	
 			</ModelTimeProperties>
 		</SimulationExperiment>	
 	</Experiments>
